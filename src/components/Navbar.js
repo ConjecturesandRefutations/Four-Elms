@@ -26,12 +26,12 @@ return(
         </div>
     </div>
     <ul class={`text-sm ${menuOpen ? "" : "hidden"} inline-block md:block`} id="menu">
-        <li class="text-gray-700">
+        <li class="text-gray-700 my-1">
             <a href="#" class="px-4 flex justify-end">
                 <span> {lang==='english' ? 'About Four Elms' : 'Acerca de Four Elms'}</span>
             </a>
         </li>
-        <li class="text-gray-700 py-1">
+        <li class="text-gray-700 py-2">
             <a href="#" class="px-4 flex justify-end mt-4">
                 <span> {lang==='english' ? 'Check-in and Check-out Procedures' : 'Procedimientos de registro y salida'}</span>
             </a>
