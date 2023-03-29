@@ -31,6 +31,11 @@ return(
                 <span> {lang==='english' ? 'About Four Elms' : 'Acerca de Four Elms'}</span>
             </a>
         </li>
+        <li class="text-gray-700 py-1">
+            <a href="#" class="px-4 flex justify-end mt-4">
+                <span> {lang==='english' ? 'Check-in and Check-out Procedures' : 'Procedimientos de registro y salida'}</span>
+            </a>
+        </li>
         <li class="py-1">
             <a href="#" class="px-4 flex justify-end">
             </a>
