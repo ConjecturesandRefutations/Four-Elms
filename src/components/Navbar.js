@@ -67,20 +67,20 @@ return(
             </a>
 
             {expandMenu ? 
-             <ul class='text-xs px-2 mt-1'>
-                <li>AGA (cooker)</li>
-                <li>Quooker (kitchen tap)</li>
-                <li>Microwave</li>
-                <li>Dishwasher</li>
-                <li>Fridge</li>
-                <li>Freezer</li>
-                <li>Washing machine</li>
-                <li>Washing line</li>
-                <li>WIFI</li>
-                <li>Kitchen TV</li>
-                <li>Heating & hot water</li>
-                <li>Side parasol</li>
-                <li>Conservatory windows & doors</li>
+             <ul class='text-xs px-6 mt-1'>
+                <li><a href="#">{lang==='english' ? 'AGA (cooker)' : 'AGA (cocina)'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Quooker (kitchen tap)' : 'Quooker (grifo de cocina)'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Microwave' : 'Microonda'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Dishwasher' : 'Lavavajillas'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Fridge' : 'Nevera'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Freezer' : 'Congelador'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Washing machine' : 'Lavadora'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Washing line' : 'Línea de lavado'}</a></li>
+                <li><a href="#">{lang==='english' ? 'WIFI' : 'WIFI'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Kitchen TV' : 'Cocina TV'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Heating & hot water' : 'Calefacción y agua caliente'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Side parasol' : 'Parasol lateral'}</a></li>
+                <li><a href="#">{lang==='english' ? 'Conservatory windows & doors' : 'Ventanas y puertas acristaladas'}</a></li>
             </ul>
                    : null }
         </li>
