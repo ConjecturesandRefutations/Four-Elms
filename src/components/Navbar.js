@@ -23,7 +23,7 @@ function Navbar(){
         if (expandMenu){
           return '🞃'
         } else {
-           return '🞂'
+           return '>'
         }
       };
       
