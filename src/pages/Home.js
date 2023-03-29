@@ -9,8 +9,6 @@ import pic3 from '../images/Four Elms 3.png'
 import pic4 from '../images/Four Elms 4.png'
 import pic5 from '../images/Four Elms 5.png'
 
-
-
 function Home(){
 
     const { lang } = useContext(LangContext);
@@ -33,11 +31,11 @@ function Home(){
         <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
             <img src={pic1} alt="Front View" class="w-full h-32 sm:h-48 object-cover"/>
             <div class="m-4">
-                <span class="font-bold">{lang==='english' ? 'Located in rural Surrey' : 'Situado en la zona rural de Surrey'}</span>
+                <span class="font-bold">{lang==='english' ? 'Located in rural Surrey' : 'En Surrey rural'}</span>
             </div>
         </div>
         <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
-            <p class='text-sm ml-1 mr-1 font-bold'>{lang==='english' ? 'Four Elms is a large family house in a quiet upscale road near the centre of Godalming. It is a tastefully decorated, tile hung Edwardian house built in the Arts and Crafts style. The interior is light with many double aspect rooms. The newly renovated traditional kitchen leads to a large open-plan breakfast room and even larger conservatory. The beautiful garden won the Godalming in Bloom best garden award.' : 'Four Elms es una gran casa familiar en una tranquila calle de lujo cerca del centro de Godalming. Es una casa eduardiana decorada con buen gusto, colgada de azulejos, construida en el estilo Arts and Crafts.  El interior es luminoso con muchas habitaciones de doble aspecto.  La cocina tradicional recientemente renovada conduce a una gran sala de desayunos de planta abierta y un invernadero aún más grande.El hermoso jardín ganó el premio al mejor jardín Godalming in Bloom.'}</p>
+            <p class='text-sm ml-1 mr-1 font-bold'>{lang==='english' ? 'Four Elms is a large family house in a quiet upscale road near the centre of Godalming. It is a tastefully decorated, tile hung Edwardian house built in the Arts and Crafts style. The interior is light with many double aspect rooms. The newly renovated traditional kitchen leads to a large open-plan breakfast room and even larger conservatory. The beautiful garden won the Godalming in Bloom best garden award.' : 'Four Elms es una gran casa familiar en una tranquila calle de lujo cerca del centro de Godalming. Es una casa eduardiana decorada con buen gusto, colgada de azulejos, construida en el estilo Arts and Crafts. La cocina tradicional recientemente renovada conduce a una gran sala de desayunos de planta abierta y un invernadero aún más grande.El hermoso jardín ganó el premio al mejor jardín Godalming in Bloom.'}</p>
         </div>
             <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
                 <img src={pic2} alt="Bedrooms" class="w-full h-32 sm:h-48 object-cover"/>

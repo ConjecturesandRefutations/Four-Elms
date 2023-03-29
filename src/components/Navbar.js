@@ -1,6 +1,11 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+
+import { LangContext } from '../context/language.context';
+
 
 function Navbar(){
+
+    const { lang } = useContext(LangContext);
       
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,7 +28,7 @@ return(
     <ul class={`text-sm mt-6 ${menuOpen ? "" : "hidden"} inline-block md:block`} id="menu">
         <li class="text-gray-700 py-1">
             <a href="#" class="px-4 flex justify-end mt-4">
-                <span>About Four Elms</span>
+                <span> {lang==='english' ? 'About Four Elms' : 'Acerca de Four Elms'}</span>
             </a>
         </li>
         <li class="py-1">
@@ -32,47 +37,47 @@ return(
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>Contact and emergency information</span>            
+                <span> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y emergencia'}</span>            
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>Alarm system and locking up</span>          
+                <span>{lang==='english' ? 'Alarm system and locking up' : 'Sistema de alarma y bloqueo'}</span>          
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>Instructions for appliances and electronics</span>              
+                <span>{lang==='english' ? 'Instructions for appliances and electronics' : 'Instrucciones para electrodomésticos y electrónica'}</span>              
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>Towels, linen & kitchen supplies</span>               
+                <span>{lang==='english' ? 'Towels, linen & kitchen supplies' : 'Toallas, ropa de cama y utensilios de cocina'}</span>               
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>Waste disposal and recycling</span>                      
+                <span>{lang==='english' ? 'Waste disposal and recycling' : 'Eliminación y reciclaje de residuos'}</span>                      
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>Information on the local area</span>               
+                <span>{lang==='english' ? 'Information on the local area' : 'Información sobre el área local'}</span>               
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>House rules & contract</span>              
+                <span>{lang==='english' ? 'House rules & contract' : 'Reglas de la casa y contrato'}</span>              
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>House cleaning</span>             
+                <span>{lang==='english' ? 'House cleaning' : 'Limpieza de la casa'}</span>             
             </a>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end">
-                <span>Feedback</span>               
+                <span>{lang==='english' ? 'Feedback' : 'Retroalimentación'}</span>               
             </a>
         </li>
     </ul>
