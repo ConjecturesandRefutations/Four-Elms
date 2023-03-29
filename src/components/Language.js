@@ -9,10 +9,18 @@ function Language(){
 
   const { lang, toggleLang } = useContext(LangContext);
 
+function changeFlag(lang){
+  if (lang === 'english'){
+    return spanish
+  } else {
+     return english
+  }
+};
+
 return(
 <>
 <div id='flags'>
-<img src={spanish} alt='spanish' id='spanish' class='cursor-pointer' onClick={toggleLang}/>
+<img src={changeFlag(lang)} alt='spanish' id='spanish' class='cursor-pointer' onClick={toggleLang}/>
 </div>
 </>
 )
