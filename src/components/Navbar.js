@@ -1,4 +1,5 @@
 import { useState, useContext } from 'react'
+import { Link } from "react-router-dom";
 
 import { LangContext } from '../context/language.context';
 
@@ -110,9 +111,9 @@ return(
             </a>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
-                <span>{lang==='english' ? 'Feedback' : 'Retroalimentación'}</span>               
-            </a>
+            <Link to={"/feedback"} class="px-4 flex justify-end mt-4">
+                <button>{lang==='english' ? 'Feedback' : 'Retroalimentación'}</button>               
+            </Link>
         </li>
     </ul>
 
