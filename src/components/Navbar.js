@@ -9,15 +9,30 @@ function Navbar(){
       
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const [expandMenu, setExpandedMenu] = useState(false);
+
     const handleMenuClick = () => {
         setMenuOpen(!menuOpen);
       }
+
+      const expandMenuClick = () => {
+        setExpandedMenu(!expandMenu)
+      }
+
+      function changeChevron(expandMenu){
+        if (expandMenu){
+          return '🞃'
+        } else {
+           return '🞂'
+        }
+      };
+      
 
 return(
 
 <>
 <div class="md:col-span-1 md:flex md:justify-end my-10">
-<nav class="text-right">
+<nav class="text-right xl:fixed" id='navbar'>
     <div class="flex justify-between items-center">
         <div class="px-4 cursor-pointer md:hidden ml-auto mr-5 wl-full" id="burger" onClick={handleMenuClick}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
@@ -25,7 +40,7 @@ return(
               </svg>              
         </div>
     </div>
-    <ul class={`text-sm ${menuOpen ? "" : "hidden"} inline-block md:block`} id="menu">
+    <ul class={`text-sm ${menuOpen ? "" : "hidden"} inline-block md:block mt-4`} id="menu">
         <li class="text-gray-700 my-1">
             <a href="#" class="px-4 flex justify-end">
                 <span> {lang==='english' ? 'About Four Elms' : 'Acerca de Four Elms'}</span>
@@ -48,8 +63,26 @@ return(
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end mt-4">
-                <span>{lang==='english' ? 'Instructions for appliances and electronics' : 'Instrucciones para electrodomésticos y electrónica'}</span>              
+                <span onClick={expandMenuClick}>{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
             </a>
+
+            {expandMenu ? 
+             <ul class='text-xs px-2 mt-1'>
+                <li>AGA (cooker)</li>
+                <li>Quooker (kitchen tap)</li>
+                <li>Microwave</li>
+                <li>Dishwasher</li>
+                <li>Fridge</li>
+                <li>Freezer</li>
+                <li>Washing machine</li>
+                <li>Washing line</li>
+                <li>WIFI</li>
+                <li>Kitchen TV</li>
+                <li>Heating & hot water</li>
+                <li>Side parasol</li>
+                <li>Conservatory windows & doors</li>
+            </ul>
+                   : null }
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end mt-4">
