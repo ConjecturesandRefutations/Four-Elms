@@ -1,0 +1,48 @@
+.home-main{
+  background-color: #D6F1FF;
+  min-height: 100vh;
+}
+
+#flags{
+ position: absolute;
+ right: 50px;
+ top: 20px;
+ display: flex;
+ flex-direction: row;
+ max-width: 200px;
+}
+
+#english{
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+#spanish{
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+
+@media (max-width: 1023px) {
+  #flags {
+    right: 20px;
+  }
+} 
+
+
+@media (max-width: 767px) {
+  #flags {
+    left: 50px;
+    top: 30px;
+  }
+} 
+
+@media (max-width: 767px) {
+  #english {
+    max-height: 40px;
+    
+  }
+  #spanish {
+    max-height: 40px;
+  }
+} 
