@@ -66,6 +66,15 @@ input[name="comments"] {
   height: 300px; 
 }
 
+#checkinout{
+  background-color: #D6F1FF;
+  min-height: 100vh;
+}
+
+#check{
+  margin-left: 10vw;
+}
+
 @media (max-width: 1023px) {
   #flags {
     right: 20px;

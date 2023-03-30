@@ -48,9 +48,9 @@ return(
             </Link>
         </li>
         <li class="text-gray-700 py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/check-in-out'} class="px-4 flex justify-end mt-4">
                 <span> {lang==='english' ? 'Check-in and Check-out Procedures' : 'Procedimientos de registro y salida'}</span>
-            </a>
+            </Link>
         </li>
         <li class="py-2">
             <a href="#" class="px-4 flex justify-end mt-4">

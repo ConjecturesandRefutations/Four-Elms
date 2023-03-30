@@ -26,7 +26,7 @@ function Home(){
         <h3 class="text-gray-700 text-2xl font-semibold mt-2 hidden lg:block">{lang==='english' ? 'Home Guide' : 'Guía de inicio'}</h3>
     </header>
     <div>
-        <h4 class="font-bold mt-4 pb-2 border-b">{lang==='english' ? 'Look Inside' : 'Mira Dentro'}</h4>
+        <h4 class="font-bold mt-4 pb-2 border-b">{lang==='english' ? 'About' : 'Acerca de'}</h4>
         <div class="mt-8 grid lg:grid-cols-3 gap-10">
         <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
             <img src={pic1} alt="Front View" class="w-full h-32 sm:h-48 object-cover"/>
