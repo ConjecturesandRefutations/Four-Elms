@@ -106,14 +106,14 @@ return(
             </a>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link href="#" class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'House cleaning' : 'Limpieza de la casa'}</span>             
-            </a>
+            </Link>
         </li>
         <li class="py-2">
-            <a href='/feedback' class="px-4 flex justify-end mt-4">
+            <Link to={'feedback'} class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'Feedback' : 'Retroalimentación'}</span>               
-            </a>
+            </Link>
         </li>
     </ul>
 
