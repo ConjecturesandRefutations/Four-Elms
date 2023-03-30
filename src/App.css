@@ -75,6 +75,14 @@ input[name="comments"] {
   margin-left: 10vw;
 }
 
+@media (max-width: 767px) {
+  #check {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 @media (max-width: 1023px) {
   #flags {
     right: 20px;

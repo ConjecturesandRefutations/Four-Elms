@@ -17,7 +17,7 @@ return(
 
 <main class="md:col-span-3" id='checkinout'>
 
-<div class='md:pt-10 w-3/5' id='check' >
+<div class='md:pt-10 w-3/5 mx-auto' id='check'  >
 
 <h1 class='text-2xl font-bold mb-8'> {lang==='english' ? 'Check-in and check-out procedures' : 'Procedimientos de check-in y check-out'} </h1>
 
