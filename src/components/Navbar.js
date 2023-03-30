@@ -43,9 +43,9 @@ return(
     </div>
     <ul class={`text-sm ${menuOpen ? "" : "hidden"} inline-block md:block mt-4`} id="menu">
         <li class="text-gray-700 my-1">
-            <a href="#" class="px-4 flex justify-end">
+           <Link to={'/'} activeClassName="active" className="px-4 flex justify-end">
                 <span> {lang==='english' ? 'About Four Elms' : 'Acerca de Four Elms'}</span>
-            </a>
+            </Link>
         </li>
         <li class="text-gray-700 py-2">
             <a href="#" class="px-4 flex justify-end mt-4">

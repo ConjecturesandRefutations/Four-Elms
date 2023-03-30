@@ -68,15 +68,6 @@ input[name="comments"] {
   height: 300px; 
 }
 
-.feedback{
-display: flex;
-flex-direction: row;
-justify-content: center;
-font-weight: bold;
-font-size: large;
-padding-top: 10px;
-}
-
 @media (max-width: 1023px) {
   #flags {
     right: 20px;
@@ -107,3 +98,15 @@ padding-top: 10px;
   }
 } 
 
+
+@media (max-width: 400px) {
+  #container {
+   width: 300px;
+  }
+} 
+
+@media (max-width: 320px) {
+  #container {
+   width: 200px;
+  }
+} 
