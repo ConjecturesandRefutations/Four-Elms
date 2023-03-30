@@ -22,13 +22,11 @@
   margin-right: 10px;
 }
 
-.container {
+#container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 360px;
   box-shadow: 0 0 0 8px #D6F1FF;
-  margin: 0 auto;
+  margin: auto;
   margin-top: 80px;
 }
 
