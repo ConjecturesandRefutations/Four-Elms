@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import { LangContext } from '../context/language.context';
 
+import Language from '../components/Language';
+
 import Navbar from "../components/Navbar";
 
 import Aga1 from '../images/Aga1.png'
@@ -15,13 +17,21 @@ return(
 
 <div class="grid md:grid-cols-4">
 
-<Navbar/>
+<div id='nav-appliance'>
+
+<Navbar />
+<div className='md:hidden'>
+<Language/>
+</div>
+
+</div>
+
 
 <main class="md:col-span-3" id='appliances' >
 
 <div class='md:pt-10 w-3/5 mx-auto'  >
 
-<h1 class='text-2xl font-bold mb-8' id='aga'> {lang==='english' ? 'Instruction for Appliances and Electronics' : 'Instrucciones para electrodomésticos y electrónica'} </h1>
+<h1 class='text-2xl font-bold mb-8 mt-4' id='aga'> {lang==='english' ? 'Instruction for Appliances and Electronics' : 'Instrucciones para electrodomésticos y electrónica'} </h1>
 
 <h2 class='text-l font-bold underline mb-6'>{lang==='english' ? 'THE SECRET OF AGA COOKING — HOW YOUR AGA COOKER WORKS' : 'EL SECRETO DE LA COCINA AGA: CÓMO FUNCIONA SU COCINA AGA'}</h2>
 

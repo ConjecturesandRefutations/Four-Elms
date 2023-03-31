@@ -15,10 +15,16 @@ function Home(){
 
     return(
 <>
-<div class="text-gray-600" id="home">
+<div class="text-gray-600 " id="home">
     
     <div class="grid md:grid-cols-4">
-<Navbar/>
+
+<section >
+
+<Navbar />
+
+</section>
+
     <main class="home-main px-16 py-6 md:col-span-3">
     
         <header>
