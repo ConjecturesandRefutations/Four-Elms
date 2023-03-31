@@ -1,8 +1,6 @@
 import { useContext } from 'react'
 import { LangContext } from '../context/language.context';
 
-import Language from '../components/Language';
-
 import Navbar from "../components/Navbar";
 
 import Aga1 from '../images/Aga1.png'
@@ -20,9 +18,6 @@ return(
 <div id='nav-appliance'>
 
 <Navbar />
-<div className='md:hidden'>
-<Language/>
-</div>
 
 </div>
 

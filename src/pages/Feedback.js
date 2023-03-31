@@ -13,7 +13,11 @@ return(
 
 <div class="grid md:grid-cols-4">
 
-<Navbar/>
+<div id='nav-feed'>
+
+<Navbar />
+
+</div>
 
 <main class="md:col-span-3" id='feedback'>
 

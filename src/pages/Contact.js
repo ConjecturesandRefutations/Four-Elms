@@ -13,13 +13,17 @@ return(
 
 <div class="grid md:grid-cols-4">
 
-<Navbar/>
+<div id='nav-contact'>
+
+<Navbar />
+
+</div>
 
 <main class="md:col-span-3" id='contactOne'>
 
 <div class='md:pt-10 w-3/5 mx-auto' id='contactTwo'  >
 
-<h1 class='text-2xl font-bold mb-8'> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y de emergencia'} </h1>
+<h1 class='text-2xl font-bold mb-8 mt-8'> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y de emergencia'} </h1>
 
 <h2 class='text-xl font-bold mb-8'>{lang==='english' ? 'Contacts' : 'Contactos'}</h2>
 

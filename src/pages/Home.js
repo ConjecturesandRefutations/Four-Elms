@@ -19,13 +19,13 @@ function Home(){
     
     <div class="grid md:grid-cols-4">
 
-<section >
+<section id='nav-home'>
 
 <Navbar />
 
 </section>
 
-    <main class="home-main px-16 py-6 md:col-span-3">
+    <main class="home-main px-16 py-6 md:col-span-3" id='home-main'>
     
         <header>
         <h2 class="text-gray-700 text-6xl font-semibold">Four Elms</h2>
