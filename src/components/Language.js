@@ -2,8 +2,8 @@ import { useState, useContext } from 'react'
 
 import { LangContext } from '../context/language.context';
 
-import english from '../images/english-flag.png'
-import spanish from '../images/spanish-flag.png'
+import english from '../images/Flags/english-flag.png'
+import spanish from '../images/Flags/spanish-flag.png'
 
 function Language(){
 

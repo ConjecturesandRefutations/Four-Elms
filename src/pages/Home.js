@@ -3,11 +3,11 @@ import Navbar from '../components/Navbar';
 
 import { LangContext } from '../context/language.context';
 
-import pic1 from '../images/Four Elms 1.png'
-import pic2 from '../images/Four Elms 2.png'
-import pic3 from '../images/Four Elms 3.png'
-import pic4 from '../images/Four Elms 4.png'
-import pic5 from '../images/Four Elms 5.png'
+import pic1 from '../images/FourElms/Four Elms 1.png'
+import pic2 from '../images/FourElms/Four Elms 2.png'
+import pic3 from '../images/FourElms/Four Elms 3.png'
+import pic4 from '../images/FourElms/Four Elms 4.png'
+import pic5 from '../images/FourElms/Four Elms 5.png'
 
 function Home(){
 

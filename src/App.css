@@ -100,6 +100,14 @@ input[name="comments"] {
   height: 30vh;
 }
 
+#quooker-one{
+  margin-left: 15vw;
+}
+
+#quooker-two{
+  margin-left: 15vw;
+}
+
 @media (max-width: 904px) {
   .video {
    width:400px
