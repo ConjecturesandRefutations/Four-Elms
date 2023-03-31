@@ -72,7 +72,7 @@ input[name="comments"] {
   min-height: 100vh;
 }
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 767px) {
   #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed {
     position: fixed;
     top: 0;
