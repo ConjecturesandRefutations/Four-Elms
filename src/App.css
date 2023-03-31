@@ -30,7 +30,7 @@
 
 input {
   padding: 10px;
-  border: 8px solid #D6F1FF;
+  border: 8px solid #F9DFDF;
 }
 
 input[type="text"],
@@ -66,7 +66,7 @@ input[name="comments"] {
   height: 300px; 
 }
 
-#checkinout{
+#checkinout, #contactOne, #alarm, #appliances, #towels, #waste, #information, #contract, #cleaning{
   background-color: #D6F1FF;
   min-height: 100vh;
 }
@@ -75,13 +75,18 @@ input[name="comments"] {
   margin-left: 10vw;
 }
 
+#feedback{
+  background-color: #D6F1FF;
+  min-height: 100vh;
+}
+
 @media (max-width: 767px) {
   #check {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
   }
 }
-
 
 @media (max-width: 1023px) {
   #flags {
@@ -109,7 +114,7 @@ input[name="comments"] {
 
 @media (min-width: 767px) {
   #container {
-   margin-top: 80px;
+   margin-top: 60px;
   }
 } 
 

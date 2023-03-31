@@ -5,14 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import { LangProviderWrapper } from './context/language.context';
+import { AppContextProvider } from './context/app.context.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <AppContextProvider>
       <LangProviderWrapper>
     <App />
     </LangProviderWrapper>
+    </AppContextProvider>
     </Router>
   </React.StrictMode>
 );

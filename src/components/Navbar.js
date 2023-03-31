@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import { LangContext } from '../context/language.context';
 
+import { AppContext } from '../context/app.context';
+
 
 function Navbar(){
 
@@ -10,14 +12,14 @@ function Navbar(){
       
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const [expandMenu, setExpandedMenu] = useState(false);
+    const { expandMenu, setExpandMenu } = useContext(AppContext);
 
     const handleMenuClick = () => {
         setMenuOpen(!menuOpen);
       }
 
       const expandMenuClick = () => {
-        setExpandedMenu(!expandMenu)
+        setExpandMenu(!expandMenu)
       }
 
       function changeChevron(expandMenu){
@@ -53,20 +55,20 @@ return(
             </Link>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/contact'} class="px-4 flex justify-end mt-4">
                 <span> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y emergencia'}</span>            
-            </a>
+            </Link>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/alarm'} class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'Alarm system and locking up' : 'Sistema de alarma y bloqueo'}</span>          
-            </a>
+            </Link>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
-                <span onClick={expandMenuClick}>{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
-            </a>
-
+            <Link to={'/appliances'} onClick={expandMenuClick} class="px-4 flex justify-end mt-4">
+                <span >{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
+            </Link>
+            </li>
             {expandMenu ? 
              <ul class='text-xs px-6 mt-1'>
                 <li><a href="#">{lang==='english' ? 'AGA (cooker)' : 'AGA (cocina)'}</a></li>
@@ -84,29 +86,29 @@ return(
                 <li><a href="#">{lang==='english' ? 'Conservatory windows & doors' : 'Ventanas y puertas acristaladas'}</a></li>
             </ul>
                    : null }
-        </li>
+        
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/towels'} class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'Towels, linen & kitchen supplies' : 'Toallas, ropa de cama y utensilios de cocina'}</span>               
-            </a>
+            </Link>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/waste'} class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'Waste disposal and recycling' : 'Eliminación y reciclaje de residuos'}</span>                      
-            </a>
+            </Link>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/information'} class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'Information on the local area' : 'Información sobre el área local'}</span>               
-            </a>
+            </Link>
         </li>
         <li class="py-2">
-            <a href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/contract'} class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'House rules & contract' : 'Reglas de la casa y contrato'}</span>              
-            </a>
+            </Link>
         </li>
         <li class="py-2">
-            <Link href="#" class="px-4 flex justify-end mt-4">
+            <Link to={'/cleaning'} class="px-4 flex justify-end mt-4">
                 <span>{lang==='english' ? 'House cleaning' : 'Limpieza de la casa'}</span>             
             </Link>
         </li>

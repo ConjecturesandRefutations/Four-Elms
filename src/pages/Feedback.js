@@ -15,7 +15,7 @@ return(
 
 <Navbar/>
 
-<main class="md:col-span-3">
+<main class="md:col-span-3" id='feedback'>
 
 <div class='md:pt-10' id="container">
 
