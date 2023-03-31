@@ -132,7 +132,7 @@ return(
 
 <p class='mb-8'>{lang==='english' ? `This is for cleaning the raw cast iron surfaces, keeping them clear of crumbs and burnt-on debris – which would otherwise affect the boiling performance of pans and the kettle. Use on the hotplates and the ovens. Take care not to touch the enamel surfaces as the wire brush will scratch the finish.` : `Esto es para limpiar las superficies de hierro fundido en bruto, manteniéndolas libres de migas y residuos quemados, que de otro modo afectarían el rendimiento de ebullición de las ollas y la marmita. Utilizar en las placas de cocción y los hornos. Tenga cuidado de no tocar las superficies esmaltadas ya que el cepillo de alambre rayará el acabado.`}</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-Oiwt5N82EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/-Oiwt5N82EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br/>
 

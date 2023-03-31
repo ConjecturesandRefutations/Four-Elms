@@ -100,6 +100,41 @@ input[name="comments"] {
   height: 30vh;
 }
 
+@media (max-width: 904px) {
+  .video {
+   width:400px
+  }
+}
+
+@media (max-width: 500px) {
+  .video {
+   width:300px
+  }
+}
+
+@media (max-width: 400px) {
+  .video {
+   width:300px
+  }
+}
+
+@media (max-width: 360px) {
+  .video {
+   width:260px
+  }
+}
+
+@media (max-width: 320px) {
+  .video {
+   width:220px
+  }
+}
+
+@media (max-width: 300px) {
+  .video {
+   width:200px
+  }
+}
 
   @media (max-width: 767px) {
     #white {
