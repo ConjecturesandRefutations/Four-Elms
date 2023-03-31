@@ -4,7 +4,7 @@
 }
 
 #flags{
- position: absolute;
+ position: fixed;
  right: 50px;
  top: 20px;
  display: flex;
@@ -78,6 +78,11 @@ input[name="comments"] {
 #feedback{
   background-color: #D6F1FF;
   min-height: 100vh;
+}
+
+#aga-plates{
+  width: 40vw;
+  height: 30vh;
 }
 
 @media (max-width: 767px) {
