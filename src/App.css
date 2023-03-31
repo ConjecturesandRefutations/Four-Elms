@@ -108,6 +108,12 @@ input[name="comments"] {
   margin-left: 15vw;
 }
 
+@media (max-width: 500px) {
+  #quooker-one {
+    margin-left: 10vw;
+  }
+}
+
 @media (max-width: 904px) {
   .video {
    width:400px
