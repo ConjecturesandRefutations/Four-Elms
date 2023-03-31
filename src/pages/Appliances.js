@@ -3,10 +3,19 @@ import { LangContext } from '../context/language.context';
 
 import Navbar from "../components/Navbar";
 
+import YouTube from 'react-youtube';
+
 import Aga1 from '../images/Aga1.png'
 import Aga2 from '../images/Aga 2.png'
 import Aga3 from '../images/Aga3true.png'
 import Aga4 from '../images/Aga4real.png'
+
+import One from '../images/AgaInstructions/1.png'
+import Two from '../images/AgaInstructions/2.png'
+import Three from '../images/AgaInstructions/3.png'
+import Four from '../images/AgaInstructions/4.png'
+import Five from '../images/AgaInstructions/5.png'
+import Six from '../images/AgaInstructions/6.png'
 
 function Appliances(){
 
@@ -122,6 +131,19 @@ return(
 <h2 class='text-l font-bold mb-6 mt-8'>{lang==='english' ? `WIRE BRUSH` : `CEPILLO DE ALAMBRE`}</h2>
 
 <p class='mb-8'>{lang==='english' ? `This is for cleaning the raw cast iron surfaces, keeping them clear of crumbs and burnt-on debris – which would otherwise affect the boiling performance of pans and the kettle. Use on the hotplates and the ovens. Take care not to touch the enamel surfaces as the wire brush will scratch the finish.` : `Esto es para limpiar las superficies de hierro fundido en bruto, manteniéndolas libres de migas y residuos quemados, que de otro modo afectarían el rendimiento de ebullición de las ollas y la marmita. Utilizar en las placas de cocción y los hornos. Tenga cuidado de no tocar las superficies esmaltadas ya que el cepillo de alambre rayará el acabado.`}</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Oiwt5N82EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/>
+
+<h3 class='font-bold'>{lang==='english' ? 'Video Translation' : 'Traducción de vídeo'}</h3>
+
+<img src={One} alt='one'/>
+<img src={Two} alt='two'/>
+<img src={Three} alt='three'/>
+<img src={Four} alt='four'/>
+<img src={Five} alt='five'/>
+<img src={Six} alt='six'/>
 
 </div>
 
