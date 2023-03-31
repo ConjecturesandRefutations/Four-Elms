@@ -72,7 +72,7 @@ return(
             {expandMenu ? 
              <ul class='text-xs px-6 mt-1'>
                 <li><a href="#aga">{lang==='english' ? 'AGA (cooker)' : 'AGA (cocina)'}</a></li>
-                <li><a href="#">{lang==='english' ? 'Quooker (kitchen tap)' : 'Quooker (grifo de cocina)'}</a></li>
+                <li><a href="#quooker">{lang==='english' ? 'Quooker (kitchen tap)' : 'Quooker (grifo de cocina)'}</a></li>
                 <li><a href="#">{lang==='english' ? 'Microwave' : 'Microonda'}</a></li>
                 <li><a href="#">{lang==='english' ? 'Dishwasher' : 'Lavavajillas'}</a></li>
                 <li><a href="#">{lang==='english' ? 'Fridge' : 'Nevera'}</a></li>

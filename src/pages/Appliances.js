@@ -147,7 +147,7 @@ return(
 
 <br/>
 
-<h2 class='text-l font-bold underline mb-6'>{lang==='english' ? `Quooker kitchen tap` : 'Grifo de cocina Quoker'}</h2>
+<h2 class='text-xl font-bold underline mb-6' id='quooker'>{lang==='english' ? `Quooker kitchen tap` : 'Grifo de cocina Quoker'}</h2>
 
 <h2 class='text-l font-bold mb-6 mt-8'>{lang==='english' ? `Hot and cold water` : `Agua fría y caliente`}</h2>
 
