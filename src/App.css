@@ -67,7 +67,8 @@ input[name="comments"] {
   height: 300px; 
 }
 
-#checkinout, #contactOne, #alarm, #appliances, #towels, #waste, #information, #contract, #cleaning{
+#checkinout, #contactOne, #alarm, #Aga, #towels, #waste, #information, #contract, #cleaning, #Quooker, #Microwave, 
+#WashingLine, #Parasol, #Fridge, #Heating, #Freezer, #Conservatory, #KitchenTV, #Dishwasher, #Wifi, #WashingMachine{
   background-color: #D6F1FF;
   min-height: 100vh;
 }

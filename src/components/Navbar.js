@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { LangContext } from '../context/language.context';
 
@@ -38,32 +38,6 @@ function Navbar(){
       };
 
 
-      // Get all navigation elements on the page
-var navLinks = document.querySelectorAll('a[href^="#"]');
-
-
-
-navLinks.forEach(function(navLink) {
-    navLink.addEventListener('click', function(event) {
-      // Prevent the default behavior of the link
-      event.preventDefault();
-  
-      // Remove the "active" class from all navigation elements
-      navLinks.forEach(function(link) {
-        link.classList.remove('active');
-      });
-  
-      // Add the "active" class to the clicked navigation element
-      navLink.classList.add('active');
-  
-      // Scroll to the section with the corresponding id
-      var section = document.querySelector(navLink.getAttribute('href'));
-      section.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-  
-      
-
 return(
 
 <>
@@ -97,26 +71,26 @@ return(
                 <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Alarm system and locking up' : 'Sistema de alarma y bloqueo'}</span>          
             </NavLink>
         </li>
-        <li class="">
-            <NavLink to={'/appliances'} className={({ isActive }) => isActive ? "selected" : ""} onClick={expandMenuClick}>
+        <li>
+            <Link className={({ isActive }) => isActive ? "selected" : ""} onClick={expandMenuClick}>
                 <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
-            </NavLink>
+            </Link>
             </li>
             {expandMenu ? 
              <ul class='text-xs px-6 mt-1'>
-                <li><a href="#aga" onClick={specialMenuClick}>{lang==='english' ? 'AGA (cooker)' : 'AGA (cocina)'}</a></li>
-                <li><a href="#quooker" onClick={specialMenuClick}>{lang==='english' ? 'Quooker (kitchen tap)' : 'Quooker (grifo de cocina)'}</a></li>
-                <li><a href="#microwave" onClick={specialMenuClick}>{lang==='english' ? 'Microwave' : 'Microonda'}</a></li>
-                <li><a href="#dishwasher" onClick={specialMenuClick}>{lang==='english' ? 'Dishwasher' : 'Lavavajillas'}</a></li>
-                <li><a href="#fridge" onClick={specialMenuClick}>{lang==='english' ? 'Fridge' : 'Nevera'}</a></li>
-                <li><a href="#freezer" onClick={specialMenuClick}>{lang==='english' ? 'Freezer' : 'Congelador'}</a></li>
-                <li><a href="#washing-machine" onClick={specialMenuClick}>{lang==='english' ? 'Washing machine' : 'Lavadora'}</a></li>
-                <li><a href="#washing-line" onClick={specialMenuClick}>{lang==='english' ? 'Washing line' : 'Línea de lavado'}</a></li>
-                <li><a href="#wifi" onClick={specialMenuClick}>{lang==='english' ? 'WIFI' : 'WIFI'}</a></li>
-                <li><a href="#kitchen-tv" onClick={specialMenuClick}>{lang==='english' ? 'Kitchen TV' : 'Cocina TV'}</a></li>
-                <li><a href="#heating" onClick={specialMenuClick}>{lang==='english' ? 'Heating & hot water' : 'Calefacción y agua caliente'}</a></li>
-                <li><a href="#parasol" onClick={specialMenuClick}>{lang==='english' ? 'Side parasol' : 'Parasol lateral'}</a></li>
-                <li><a href="#conservatory" onClick={specialMenuClick}>{lang==='english' ? 'Conservatory windows & doors' : 'Ventanas y puertas acristaladas'}</a></li>
+                <li><NavLink to={'/appliances/aga'} onClick={specialMenuClick}>{lang==='english' ? 'AGA (cooker)' : 'AGA (cocina)'}</NavLink></li>
+                <li><NavLink to={'/appliances/quooker'} onClick={specialMenuClick}>{lang==='english' ? 'Quooker (kitchen tap)' : 'Quooker (grifo de cocina)'}</NavLink></li>
+                <li><NavLink to={'/appliances/microwave'} onClick={specialMenuClick}>{lang==='english' ? 'Microwave' : 'Microonda'}</NavLink></li>
+                <li><NavLink to={'/appliances/dishwasher'} onClick={specialMenuClick}>{lang==='english' ? 'Dishwasher' : 'Lavavajillas'}</NavLink></li>
+                <li><NavLink to={'/appliances/fridge'} onClick={specialMenuClick}>{lang==='english' ? 'Fridge' : 'Nevera'}</NavLink></li>
+                <li><NavLink to={'/appliances/freezer'} onClick={specialMenuClick}>{lang==='english' ? 'Freezer' : 'Congelador'}</NavLink></li>
+                <li><NavLink to={'/appliances/washingmachine'} onClick={specialMenuClick}>{lang==='english' ? 'Washing machine' : 'Lavadora'}</NavLink></li>
+                <li><NavLink to={'/appliances/washingline'} onClick={specialMenuClick}>{lang==='english' ? 'Washing line' : 'Línea de lavado'}</NavLink></li>
+                <li><NavLink to={'/appliances/wifi'} onClick={specialMenuClick}>{lang==='english' ? 'WIFI' : 'WIFI'}</NavLink></li>
+                <li><NavLink to={'/appliances/kitchentv'} onClick={specialMenuClick}>{lang==='english' ? 'Kitchen TV' : 'Cocina TV'}</NavLink></li>
+                <li><NavLink to={'/appliances/heating'} onClick={specialMenuClick}>{lang==='english' ? 'Heating & hot water' : 'Calefacción y agua caliente'}</NavLink></li>
+                <li><NavLink to={'/appliances/parasol'} onClick={specialMenuClick}>{lang==='english' ? 'Side parasol' : 'Parasol lateral'}</NavLink></li>
+                <li><NavLink to={'/appliances/conservatory'} onClick={specialMenuClick}>{lang==='english' ? 'Conservatory windows & doors' : 'Ventanas y puertas acristaladas'}</NavLink></li>
             </ul>
                    : null }
         
