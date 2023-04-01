@@ -1,4 +1,4 @@
-import { React, useContext } from "react";
+import { React, useContext, useEffect } from "react";
 import Navbar from '../components/Navbar';
 
 import { LangContext } from '../context/language.context';
@@ -12,6 +12,10 @@ import pic5 from '../images/FourElms/Four Elms 5.png'
 function Home(){
 
     const { lang } = useContext(LangContext);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     return(
 <>
