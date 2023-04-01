@@ -68,7 +68,7 @@ return(
 
 <>
 <div class="md:col-span-1 md:flex md:justify-end my-10">
-<nav class="text-right xl:fixed" >
+<nav class="text-right xl:fixed xl:mt-5" >
     <div class="flex justify-between items-center">
         <div class="px-4 cursor-pointer md:hidden ml-auto mr-5 wl-full" id="burger" onClick={specialMenuClick}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
