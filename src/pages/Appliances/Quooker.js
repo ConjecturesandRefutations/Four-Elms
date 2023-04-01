@@ -18,7 +18,7 @@ return(
 
 <>
 
-<div class="grid md:grid-cols-4">
+<div class="grid md:grid-cols-4" className='nav-probs'>
 
 <Navbar/>
 

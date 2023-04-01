@@ -74,7 +74,7 @@ input[name="comments"] {
 }
 
  @media screen and (max-width: 767px) {
-  #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed {
+  #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed, .nav-probs {
     position: fixed;
     top: 0;
     left: 0;
@@ -82,7 +82,8 @@ input[name="comments"] {
     z-index: 999;
     background-color: white;
   }
-  #appliances, #home-main, #checkinout, #contactOne, #feedback{
+  #Aga, #home-main, #checkinout, #contactOne, #feedback#, #Quooker, #Microwave, 
+  #WashingLine, #Parasol, #Fridge, #Heating, #Freezer, #Conservatory, #KitchenTV, #Dishwasher, #Wifi, #WashingMachine{
     margin-top: 100px;
   }
 } 
