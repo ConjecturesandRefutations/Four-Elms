@@ -108,6 +108,14 @@ input[name="comments"] {
   margin-left: 15vw;
 }
 
+.selected {
+font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+}
+
 @media (max-width: 500px) {
   #quooker-one {
     margin-left: 10vw;

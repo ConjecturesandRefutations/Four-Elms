@@ -1,5 +1,5 @@
-import { useState, useContext } from 'react'
-import { Link } from "react-router-dom";
+import { useContext } from 'react'
+import { NavLink } from "react-router-dom";
 
 import { LangContext } from '../context/language.context';
 
@@ -36,6 +36,32 @@ function Navbar(){
            return '>'
         }
       };
+
+
+      // Get all navigation elements on the page
+var navLinks = document.querySelectorAll('a[href^="#"]');
+
+
+
+navLinks.forEach(function(navLink) {
+    navLink.addEventListener('click', function(event) {
+      // Prevent the default behavior of the link
+      event.preventDefault();
+  
+      // Remove the "active" class from all navigation elements
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+      });
+  
+      // Add the "active" class to the clicked navigation element
+      navLink.classList.add('active');
+  
+      // Scroll to the section with the corresponding id
+      var section = document.querySelector(navLink.getAttribute('href'));
+      section.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  
       
 
 return(
@@ -51,78 +77,78 @@ return(
         </div>
     </div>
     <ul class={`text-sm ${menuOpen ? "" : "hidden"} inline-block md:block mt-1 md:mt-3`} id="menu">
-        <li class="text-gray-700 my-1">
-           <Link to={'/'} activeClassName="active" className="px-4 flex justify-end" onClick={handleMenuClick}>
-                <span> {lang==='english' ? 'About Four Elms' : 'Acerca de Four Elms'}</span>
-            </Link>
+        <li class="">
+           <NavLink to={'/'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span className="px-4 flex justify-end text-gray-700 my-1"> {lang==='english' ? 'About Four Elms' : 'Acerca de Four Elms'}</span>
+            </NavLink>
         </li>
-        <li class="text-gray-700 py-2">
-            <Link to={'/check-in-out'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span> {lang==='english' ? 'Check-in and Check-out Procedures' : 'Procedimientos de registro y salida'}</span>
-            </Link>
+        <li class="">
+            <NavLink to={'/check-in-out'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 text-gray-700 py-2"> {lang==='english' ? 'Check-in and Check-out Procedures' : 'Procedimientos de registro y salida'}</span>
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/contact'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y emergencia'}</span>            
-            </Link>
+        <li class="">
+            <NavLink to={'/contact'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2"> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y emergencia'}</span>            
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/alarm'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span>{lang==='english' ? 'Alarm system and locking up' : 'Sistema de alarma y bloqueo'}</span>          
-            </Link>
+        <li class="">
+            <NavLink to={'/alarm'} className={({ isActive }) => isActive ? "selected" : ""}  onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Alarm system and locking up' : 'Sistema de alarma y bloqueo'}</span>          
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/appliances'} onClick={expandMenuClick} class="px-4 flex justify-end mt-1 md:mt-3">
-                <span >{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
-            </Link>
+        <li class="">
+            <NavLink to={'/appliances'} className={({ isActive }) => isActive ? "selected" : ""} onClick={expandMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
+            </NavLink>
             </li>
             {expandMenu ? 
              <ul class='text-xs px-6 mt-1'>
                 <li><a href="#aga" onClick={specialMenuClick}>{lang==='english' ? 'AGA (cooker)' : 'AGA (cocina)'}</a></li>
                 <li><a href="#quooker" onClick={specialMenuClick}>{lang==='english' ? 'Quooker (kitchen tap)' : 'Quooker (grifo de cocina)'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Microwave' : 'Microonda'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Dishwasher' : 'Lavavajillas'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Fridge' : 'Nevera'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Freezer' : 'Congelador'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Washing machine' : 'Lavadora'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Washing line' : 'Línea de lavado'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'WIFI' : 'WIFI'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Kitchen TV' : 'Cocina TV'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Heating & hot water' : 'Calefacción y agua caliente'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Side parasol' : 'Parasol lateral'}</a></li>
-                <li><a href="#" onClick={specialMenuClick}>{lang==='english' ? 'Conservatory windows & doors' : 'Ventanas y puertas acristaladas'}</a></li>
+                <li><a href="#microwave" onClick={specialMenuClick}>{lang==='english' ? 'Microwave' : 'Microonda'}</a></li>
+                <li><a href="#dishwasher" onClick={specialMenuClick}>{lang==='english' ? 'Dishwasher' : 'Lavavajillas'}</a></li>
+                <li><a href="#fridge" onClick={specialMenuClick}>{lang==='english' ? 'Fridge' : 'Nevera'}</a></li>
+                <li><a href="#freezer" onClick={specialMenuClick}>{lang==='english' ? 'Freezer' : 'Congelador'}</a></li>
+                <li><a href="#washing-machine" onClick={specialMenuClick}>{lang==='english' ? 'Washing machine' : 'Lavadora'}</a></li>
+                <li><a href="#washing-line" onClick={specialMenuClick}>{lang==='english' ? 'Washing line' : 'Línea de lavado'}</a></li>
+                <li><a href="#wifi" onClick={specialMenuClick}>{lang==='english' ? 'WIFI' : 'WIFI'}</a></li>
+                <li><a href="#kitchen-tv" onClick={specialMenuClick}>{lang==='english' ? 'Kitchen TV' : 'Cocina TV'}</a></li>
+                <li><a href="#heating" onClick={specialMenuClick}>{lang==='english' ? 'Heating & hot water' : 'Calefacción y agua caliente'}</a></li>
+                <li><a href="#parasol" onClick={specialMenuClick}>{lang==='english' ? 'Side parasol' : 'Parasol lateral'}</a></li>
+                <li><a href="#conservatory" onClick={specialMenuClick}>{lang==='english' ? 'Conservatory windows & doors' : 'Ventanas y puertas acristaladas'}</a></li>
             </ul>
                    : null }
         
-        <li class="py-2">
-            <Link to={'/towels'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span>{lang==='english' ? 'Towels, linen & kitchen supplies' : 'Toallas, ropa de cama y utensilios de cocina'}</span>               
-            </Link>
+        <li class="">
+            <NavLink to={'/towels'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Towels, linen & kitchen supplies' : 'Toallas, ropa de cama y utensilios de cocina'}</span>               
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/waste'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span>{lang==='english' ? 'Waste disposal and recycling' : 'Eliminación y reciclaje de residuos'}</span>                      
-            </Link>
+        <li class="">
+            <NavLink to={'/waste'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Waste disposal and recycling' : 'Eliminación y reciclaje de residuos'}</span>                      
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/information'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span>{lang==='english' ? 'Information on the local area' : 'Información sobre el área local'}</span>               
-            </Link>
+        <li class="">
+            <NavLink to={'/information'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Information on the local area' : 'Información sobre el área local'}</span>               
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/contract'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span>{lang==='english' ? 'House rules & contract' : 'Reglas de la casa y contrato'}</span>              
-            </Link>
+        <li class="">
+            <NavLink to={'/contract'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'House rules & contract' : 'Reglas de la casa y contrato'}</span>              
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/cleaning'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span>{lang==='english' ? 'House cleaning' : 'Limpieza de la casa'}</span>             
-            </Link>
+        <li class="">
+            <NavLink to={'/cleaning'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'House cleaning' : 'Limpieza de la casa'}</span>             
+            </NavLink>
         </li>
-        <li class="py-2">
-            <Link to={'/feedback'} class="px-4 flex justify-end mt-1 md:mt-3" onClick={handleMenuClick}>
-                <span>{lang==='english' ? 'Feedback' : 'Retroalimentación'}</span>               
-            </Link>
+        <li class="">
+            <NavLink to={'/feedback'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
+                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Feedback' : 'Retroalimentación'}</span>               
+            </NavLink>
         </li>
     </ul>
 

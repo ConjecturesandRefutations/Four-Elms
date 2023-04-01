@@ -171,6 +171,19 @@ The light ring (image 3) is red for boiling water and blue for filtered water. I
 
 <img src={quookerTwo} alt='quookerTwo' id='quooker-two'/>
 
+
+<h1 id='microwave'>Microwave</h1>
+<h1 id='dishwasher'>Dishwasher</h1>
+<h1 id='fridge'>Fridge</h1>
+<h1 id='freezer'>Freezer</h1>
+<h1 id='washing-machine'>Washing machine</h1>
+<h1 id='washing-line'>Washing line</h1>
+<h1 id='wifi'>WIFI</h1>
+<h1 id='kitchen-tv'>Kitchen TV</h1>
+<h1 id='heating'>Heating & hot water</h1>
+<h1 id='parasol'>Side parasol</h1>
+<h1 id='conservatory'>Conservatory windows & doors</h1>
+
 </div>
 
 </main>
