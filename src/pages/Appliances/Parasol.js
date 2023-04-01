@@ -13,11 +13,13 @@ function Parasol(){
 
 return(
 
-<>
+<><div class="grid md:grid-cols-4" >
 
-<div class="grid md:grid-cols-4" id='navParasol'>
+<div id='navParasol'>
 
 <Navbar/>
+
+</div>
 
 <main class="md:col-span-3" id='Parasol'>
 
@@ -29,7 +31,6 @@ return(
 </main>
 
 </div>
-
 </>
 
 )

@@ -14,10 +14,13 @@ function KitchenTV(){
 return(
 
 <>
+<div class="grid md:grid-cols-4" >
 
-<div class="grid md:grid-cols-4" id='navKitchenTV'>
+     <div id='navKitchenTV'>
 
 <Navbar/>
+
+</div>
 
 <main class="md:col-span-3" id='KitchenTV'>
 
@@ -29,7 +32,6 @@ return(
 </main>
 
 </div>
-
 </>
 
 )

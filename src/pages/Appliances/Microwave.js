@@ -15,9 +15,13 @@ return(
 
 <>
 
-<div class="grid md:grid-cols-4" className='nav-probs' id='navMicrowave'>
+<div class="grid md:grid-cols-4" >
+
+     <div id='navMicrowave'>
 
 <Navbar/>
+
+</div>
 
 <main class="md:col-span-3" id='Microwave'>
 

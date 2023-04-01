@@ -15,11 +15,15 @@ return(
 
 <>
 
-<div class="grid md:grid-cols-4" id='navTowels'>
+<div class="grid md:grid-cols-4">
+
+<div id='navTowels'>
 
 <Navbar/>
 
-<main class="md:col-span-3" id='towels' >
+</div>
+
+<main class="md:col-span-3" id='Towels' >
 
 <div class='md:pt-10 w-3/5 mx-auto' >
 

@@ -17,9 +17,13 @@ return(
 
 <div class="grid md:grid-cols-4">
 
+     <div id='navContract'>
+
 <Navbar/>
 
-<main class="md:col-span-3" id='contract' >
+</div>
+
+<main class="md:col-span-3" id='Contract' >
 
 <div class='md:pt-10 w-3/5 mx-auto' >
 

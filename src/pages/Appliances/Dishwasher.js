@@ -15,9 +15,13 @@ return(
 
 <>
 
-<div class="grid md:grid-cols-4" id='navDishwasher'>
+<div class="grid md:grid-cols-4">
+
+     <div id='navDishwasher'>
 
 <Navbar/>
+
+</div>
 
 <main class="md:col-span-3" id='Dishwasher'>
 

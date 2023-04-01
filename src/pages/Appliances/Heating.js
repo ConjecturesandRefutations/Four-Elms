@@ -15,9 +15,13 @@ return(
 
 <>
 
-<div class="grid md:grid-cols-4" id='navHeating'>
+<div class="grid md:grid-cols-4" >
+
+<div id='navHeating'>
 
 <Navbar/>
+
+</div>
 
 <main class="md:col-span-3" id='Heating'>
 

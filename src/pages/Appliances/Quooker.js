@@ -18,16 +18,20 @@ return(
 
 <>
 
-<div class="grid md:grid-cols-4" id='navQuooker'>
+<div class="grid md:grid-cols-4">
 
-<Navbar/>
+<div id='quooker-appliance'>
 
-<main class="md:col-span-3" id='Quooker'>
+<Navbar />
+
+</div>
+
+<main class="md:col-span-3" id='Quooker' >
 
 <div class='md:pt-10 w-3/4 mx-auto' >
 
 
-<h2 class='text-xl font-bold underline mb-6' id='quooker'>{lang==='english' ? `Quooker kitchen tap` : 'Grifo de cocina Quoker'}</h2>
+<h2 class='text-xl font-bold underline mb-6 mt-10 md:mt-5' id='quooker'>{lang==='english' ? `Quooker kitchen tap` : 'Grifo de cocina Quoker'}</h2>
 
 <h2 class='text-l font-bold mb-6 mt-8'>{lang==='english' ? `Hot and cold water` : `Agua fría y caliente`}</h2>
 

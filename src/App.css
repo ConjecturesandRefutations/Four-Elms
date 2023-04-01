@@ -67,16 +67,33 @@ input[name="comments"] {
   height: 300px; 
 }
 
-#checkinout, #contactOne, #alarm, #Aga, #towels, #waste, #information, #contract, #cleaning, #Quooker, #Microwave, 
+
+
+/* //////////////////////////////////////////////////////////// */
+
+
+/* To anyone who might read the below: the reason I'm using all these individual ID's instead of using Classes - 
+it's because the Tailwind CSS styling was conflicting with my classNames in React, so classes simply aren't working. 
+Also, I couldn't use @apply directives to create classes in Tailwind CSS because it also wasn't working. 
+Therefore my only option has been to do the massively long-winded approach of using all these 
+IDs you see below! Not very DRY and a massive pain! */
+
+
+/* //////////////////////////////////////////////////////////// */
+
+
+
+
+#checkinout, #contactOne, #Alarm, #Aga, #Towels, #Waste, #Information, #Contract, #Cleaning, #Quooker, #Microwave, 
 #WashingLine, #Parasol, #Fridge, #Heating, #Freezer, #Conservatory, #KitchenTV, #Dishwasher, #Wifi, #WashingMachine{
   background-color: #D6F1FF;
   min-height: 100vh;
 }
 
  @media screen and (max-width: 767px) {
-  #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed, #navQuooker, #navMicrowave, 
-  #navWashingLine, #navParasol, #navFridge, #navHeating, #navFreezer, #navConservatory, #navKitchenTV, #navDishwasher, 
-  #navWifi, #navWashingMachine {
+  #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed, #quooker-appliance, #navConservatory, #navDishwasher,
+  #navFreezer, #navFridge, #navHeating, #navMicrowave, #navWashingMachine, #navWashingLine, #navWifi, #navKitchenTV,
+  #navParasol, #navAlarm, #navTowels, #navWaste, #navInformation, #navContract, #navCleaning {
     position: fixed;
     top: 0;
     left: 0;
@@ -84,8 +101,9 @@ input[name="comments"] {
     z-index: 999;
     background-color: white;
   }
-  #Aga, #home-main, #checkinout, #contactOne, #feedback, #Quooker, #Microwave, 
-  #WashingLine, #Parasol, #Fridge, #Heating, #Freezer, #Conservatory, #KitchenTV, #Dishwasher, #Wifi, #WashingMachine{
+  #Aga, #home-main, #checkinout, #contactOne, #feedback, #Quooker, #Conservatory, #Dishwasher, #Freezer, #Fridge,
+  #Heating, #Microwave, #WashingMachine, #WashingLine, #Wifi, #KitchenTV, #Parasol, #Alarm, #Towels, #Waste, #Information,
+  #Contract, #Cleaning{
     margin-top: 100px;
   }
 } 
