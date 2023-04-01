@@ -74,7 +74,8 @@ input[name="comments"] {
 }
 
  @media screen and (max-width: 767px) {
-  #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed, .nav-probs {
+  #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed, #navQuooker, #navMicrowave, 
+  #navWashingLine, #navParasol, #navFridge, #navHeating, #navFreezer, #navConservatory, #navKitchenTV, #navDishwasher, #navWifi, #navWashingMachine {
     position: fixed;
     top: 0;
     left: 0;

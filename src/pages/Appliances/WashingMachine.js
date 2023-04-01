@@ -15,7 +15,7 @@ return(
 
 <>
 
-<div class="grid md:grid-cols-4" className='nav-probs'>
+<div class="grid md:grid-cols-4" id='navWashingMachine'>
 
 <Navbar/>
 
