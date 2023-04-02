@@ -9,7 +9,7 @@
  top: 20px;
  display: flex;
  flex-direction: row;
- max-width: 200px;
+ max-width: 100px;
  z-index: 9999;
 }
 
