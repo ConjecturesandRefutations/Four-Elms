@@ -25,6 +25,10 @@ return(
 
 <div class='md:pt-10 w-3/5 mx-auto' >
 
+<h1 class='text-2xl font-bold mb-8 mt-4'> Mattis habitasse laoreet sociosqu, non vestibulum conubia </h1>
+
+<p class='mb-8'>Diam suspendisse class egestas, sapien fringilla consequat, libero lorem eu convallis pretium scelerisque ipsum. Aenean lacinia imperdiet dictumst, nunc feugiat rutrum, sodales non risus vel orci integer. Posuere lacinia sed, per torquent, class eros suspendisse imperdiet ultrices aliquam.</p>
+
 
 </div>
 
