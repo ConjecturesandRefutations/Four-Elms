@@ -17,13 +17,13 @@ return(
 
 <div class="grid md:grid-cols-4">
 
-<div id='nav-feed'>
+<div class='navbar' id='nav-feed'>
 
 <Navbar />
 
 </div>
 
-<main class="md:col-span-3" id='feedback'>
+<main class="background md:col-span-3" id='feedback'>
 
 <div class='md:pt-10' id="container">
 

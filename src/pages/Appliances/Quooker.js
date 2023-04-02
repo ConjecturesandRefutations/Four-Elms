@@ -20,13 +20,13 @@ return(
 
 <div class="grid md:grid-cols-4">
 
-<div id='quooker-appliance'>
+<div class='navbar' id='quooker-appliance'>
 
 <Navbar />
 
 </div>
 
-<main class="md:col-span-3" id='Quooker' >
+<main class="background md:col-span-3" id='Quooker' >
 
 <div class='md:pt-10 w-3/4 mx-auto' >
 

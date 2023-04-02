@@ -1,8 +1,3 @@
-.home-main{
-  background-color: #D6F1FF;
-  min-height: 100vh;
-}
-
 #flags{
  position: fixed;
  right: 50px;
@@ -67,33 +62,13 @@ input[name="comments"] {
   height: 300px; 
 }
 
-
-
-/* //////////////////////////////////////////////////////////// */
-
-
-/* To anyone who might read the below: the reason I'm using all these individual ID's instead of using Classes - 
-it's because the Tailwind CSS styling was conflicting with my classNames in React, so classes simply aren't working. 
-Also, I couldn't use @apply directives to create classes in Tailwind CSS because it also wasn't working. 
-Therefore my only option has been to do the massively long-winded approach of using all these 
-IDs you see below! Not very DRY and a massive pain! */
-
-
-/* //////////////////////////////////////////////////////////// */
-
-
-
-
-#checkinout, #contactOne, #Alarm, #Aga, #Towels, #Waste, #Information, #Contract, #Cleaning, #Quooker, #Microwave, 
-#WashingLine, #Parasol, #Fridge, #Heating, #Freezer, #Conservatory, #KitchenTV, #Dishwasher, #Wifi, #WashingMachine{
+.background{
   background-color: #D6F1FF;
   min-height: 100vh;
 }
 
  @media screen and (max-width: 767px) {
-  #nav-appliance, #nav-home, #nav-check, #nav-contact, #nav-feed, #quooker-appliance, #navConservatory, #navDishwasher,
-  #navFreezer, #navFridge, #navHeating, #navMicrowave, #navWashingMachine, #navWashingLine, #navWifi, #navKitchenTV,
-  #navParasol, #navAlarm, #navTowels, #navWaste, #navInformation, #navContract, #navCleaning {
+  .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -101,9 +76,7 @@ IDs you see below! Not very DRY and a massive pain! */
     z-index: 999;
     background-color: white;
   }
-  #Aga, #home-main, #checkinout, #contactOne, #feedback, #Quooker, #Conservatory, #Dishwasher, #Freezer, #Fridge,
-  #Heating, #Microwave, #WashingMachine, #WashingLine, #Wifi, #KitchenTV, #Parasol, #Alarm, #Towels, #Waste, #Information,
-  #Contract, #Cleaning{
+ .background{
     margin-top: 100px;
   }
 } 

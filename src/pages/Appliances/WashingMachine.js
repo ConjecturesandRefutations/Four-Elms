@@ -17,13 +17,13 @@ return(
 
 <div class="grid md:grid-cols-4" >
 
-     <div id='navWashingMachine'>
+     <div class='navbar' id='navWashingMachine'>
 
 <Navbar/>
 
 </div>
 
-<main class="md:col-span-3" id='WashingMachine'>
+<main class="background md:col-span-3" id='WashingMachine'>
 
 <div class='md:pt-10 w-3/5 mx-auto' >
 

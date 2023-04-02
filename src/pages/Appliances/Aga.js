@@ -29,14 +29,14 @@ return(
 
 <div class="grid md:grid-cols-4">
 
-<div id='nav-appliance'>
+<div class='navbar' id='nav-appliance'>
 
 <Navbar />
 
 </div>
 
 
-<main class="md:col-span-3" id='Aga' >
+<main class="background md:col-span-3" id='Aga' >
 
 <div class='md:pt-10 w-3/4 mx-auto'  >
 
