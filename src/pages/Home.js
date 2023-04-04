@@ -29,7 +29,7 @@ function Home(){
 
 </section>
 
-    <main class="background px-16 py-6 md:col-span-3" id='home-main'>
+    <main class="background px-7 md:px-10 lg:px-16 py-6 md:col-span-3" id='home-main'>
     
         <header>
         <h2 class="text-gray-700 text-6xl font-semibold">Four Elms</h2>
