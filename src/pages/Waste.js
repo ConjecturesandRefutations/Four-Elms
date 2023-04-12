@@ -77,7 +77,15 @@ return(
 </ul>
 
 <br/>
-<p>{lang==='english' ? 'The following site gives details - https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/Check-bin-collection-day' : 'El siguiente sitio brinda detalles: https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/Check-bin-collection-day'}</p>
+<p>
+  {lang==='english' ? 
+    `The following site gives details - ` : 
+    `El siguiente sitio brinda detalles: `
+  }
+  <a class='text-blue-600' target="_blank" href='https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/Check-bin-collection-day'>
+    https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/Check-bin-collection-day
+  </a>
+</p>
 <br/>
 <p>{lang==='english' ? 'Thomas Filipek will manage the brown wheelie bins.' : 'Thomas Filipek gestionará los contenedores marrones con ruedas.'}</p>
 <br/>
@@ -87,7 +95,9 @@ return(
 <h2 class='text-l font-bold mb-4 mt-8'> {lang==='english' ? `Rules` : 'Normas'} </h2>
 <p>{lang==='english' ? 'This site defines what can go in each bin. Be careful – if you do not follow these rules, the bin collection people may refuse to take the waste away!' : 'Este sitio define lo que puede ir en cada contenedor. Tenga cuidado: si no sigue estas reglas, ¡la gente de recolección de basura puede negarse a llevarse los desechos!'}</p>
 <br/>
-<p>{lang==='english' ? 'https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/What-to-put-in-which-bin' : 'https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/What-to-put-in-which-bin'}</p>
+
+
+<a class='text-blue-600' target="_blank" href='https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/What-to-put-in-which-bin'>https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/What-to-put-in-which-bin</a>
 
 <br/>
 <img src={Bins} alt='bins'/>
