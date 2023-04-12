@@ -115,6 +115,10 @@ font-weight: bold;
   list-style-type: circle;
 }
 
+.ordered{
+  list-style-type: decimal-leading-zero;
+}
+
 @media (max-width: 500px) {
   #quooker-one {
     margin-left: 10vw;

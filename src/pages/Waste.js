@@ -100,6 +100,7 @@ return(
 <a class='text-blue-600' target="_blank" href='https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/What-to-put-in-which-bin'>https://www.waverley.gov.uk/Services/Bins-and-recycling/Rubbish-and-recycling-collections/What-to-put-in-which-bin</a>
 
 <br/>
+<br/>
 <img src={Bins} alt='bins'/>
 
 </div>
