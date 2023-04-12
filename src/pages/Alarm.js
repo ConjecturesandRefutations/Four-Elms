@@ -30,7 +30,7 @@ return(
 
 <h1 class='text-2xl font-bold mb-8 mt-8'> {lang==='english' ? `Alarm system and locking up` : 'Sistema de alarma y cierre'} </h1>
 
-<h2 class='text-l font-bold mb-4 mt-8'> {lang==='english' ? `Keys` : 'Llaves'} </h2>
+<h2 class='text-xl font-bold mb-4 mt-8'> {lang==='english' ? `Keys` : 'Llaves'} </h2>
 
 <p>{lang==='english' ? 'We will provide a key for the front door on your arrival.' : 'Les proporcionaremos una llave para la puerta de entrada a su llegada.'}</p>
 <br/>
@@ -44,7 +44,7 @@ return(
      <li class='ml-8'>{lang==='english' ? '•	Exit by the back door, locking it after you and take the key with you.' : '•	Sal por la puerta trasera, ciérrala y llévate la llave.'}</li>
 </ul>
 
-<h2 class='text-l font-bold mb-4 mt-8'> {lang==='english' ? `Alarm` : 'Alarma'} </h2>
+<h2 class='text-xl font-bold mb-4 mt-8'> {lang==='english' ? `Alarm` : 'Alarma'} </h2>
 <p>{lang==='english' ? 'We live in a quiet neighbourhood, with very little trouble, so we suggest you do not use the alarm.' : 'Vivimos en un barrio tranquilo, con muy pocos problemas, por lo que le sugerimos que no use la alarma.'}</p>
 
 
