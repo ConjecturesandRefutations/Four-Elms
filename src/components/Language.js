@@ -20,7 +20,7 @@ function changeFlag(lang){
 return(
 <>
 <div id='flags'>
-<img src={changeFlag(lang)} alt='spanish' id='spanish' class='cursor-pointer' onClick={toggleLang}/>
+<img src={changeFlag(lang)} alt='spanish' id='spanish' class='cursor-pointer relative hover:shadow-lg' onClick={toggleLang}/>
 </div>
 </>
 )

@@ -111,6 +111,10 @@ font-weight: bold;
   font-weight: bold;
 }
 
+.subList{
+  list-style-type: circle;
+}
+
 @media (max-width: 500px) {
   #quooker-one {
     margin-left: 10vw;

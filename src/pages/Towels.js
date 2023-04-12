@@ -27,10 +27,14 @@ return(
 
 <div class='md:pt-10 w-3/5 mx-auto' >
 
-<h1 class='text-2xl font-bold mb-8 mt-4'> Mattis habitasse laoreet sociosqu, non vestibulum conubia </h1>
+<h1 class='text-2xl font-bold mb-8 mt-8'> {lang==='english' ? `Towels, linen & kitchen supplies` : 'Toallas, ropa de cama y utensilios de cocina.'} </h1>
 
-<p class='mb-8'>Diam suspendisse class egestas, sapien fringilla consequat, libero lorem eu convallis pretium scelerisque ipsum. Aenean lacinia imperdiet dictumst, nunc feugiat rutrum, sodales non risus vel orci integer. Posuere lacinia sed, per torquent, class eros suspendisse imperdiet ultrices aliquam.</p>
-
+<p>{lang==='english' ? 'There are towels in each bathroom and spare towels in the airing cupboard next to the family bathroom.' : 'Hay toallas en cada baño y toallas de repuesto en el armario secarropa al lado del baño familiar.'}</p>
+<br/>
+<p>{lang==='english' ? 'Spare bed linen is available in each bedroom. You can store this in the airing cupboard if you wish.' : 'Ropa de cama de repuesto está disponible en cada dormitorio. Puede guardar esto en el armario de ventilación si lo desea.'}</p>
+<br/>
+<p>{lang==='english' ? 'Tea towels to dry plates and cutlery and rags to clean the kitchen are kept in the top drawer opposite the large mirror.' : 'Los paños de cocina para secar platos y cubiertos y los trapos para limpiar la cocina se guardan en el cajón superior frente al gran espejo.'}</p>
+<br/>
 
 </div>
 

@@ -28,9 +28,24 @@ return(
 <div class='md:pt-10 w-3/5 mx-auto' >
 
 
-<h1 class='text-2xl font-bold mb-8 mt-4'> Mattis habitasse laoreet sociosqu, non vestibulum conubia </h1>
+<h1 class='text-2xl font-bold mb-8 mt-8'> {lang==='english' ? `Alarm system and locking up` : 'Sistema de alarma y cierre'} </h1>
 
-<p class='mb-8'>Diam suspendisse class egestas, sapien fringilla consequat, libero lorem eu convallis pretium scelerisque ipsum. Aenean lacinia imperdiet dictumst, nunc feugiat rutrum, sodales non risus vel orci integer. Posuere lacinia sed, per torquent, class eros suspendisse imperdiet ultrices aliquam.</p>
+<h2 class='text-l font-bold mb-4 mt-8'> {lang==='english' ? `Keys` : 'Llaves'} </h2>
+
+<p>{lang==='english' ? 'We will provide a key for the front door on your arrival.' : 'Les proporcionaremos una llave para la puerta de entrada a su llegada.'}</p>
+<br/>
+<p>{lang==='english' ? 'The back door keys are by the back door.' : 'Las llaves de la puerta trasera están junto a la puerta trasera.'}</p>
+<br/>
+<p>{lang==='english' ? 'When you leave the building we suggest you do this by the back door:' : 'Cuando salen del edificio, le sugerimos que lo hagan por la puerta trasera:'}</p>
+<br/>
+<ul>
+     <li class='ml-8'>{lang==='english' ? '•	Make sure the back door, conservatory doors, garden room doors and all ground floor windows are closed and locked.' : '•	Asegúrese de que la puerta trasera, las puertas de la habitación acristalada, las puertas de la sala del jardín y todas las ventanas de la planta baja estén cerradas con llave.'}</li>
+     <br/>
+     <li class='ml-8'>{lang==='english' ? '•	Exit by the back door, locking it after you and take the key with you.' : '•	Sal por la puerta trasera, ciérrala y llévate la llave.'}</li>
+</ul>
+
+<h2 class='text-l font-bold mb-4 mt-8'> {lang==='english' ? `Alarm` : 'Alarma'} </h2>
+<p>{lang==='english' ? 'We live in a quiet neighbourhood, with very little trouble, so we suggest you do not use the alarm.' : 'Vivimos en un barrio tranquilo, con muy pocos problemas, por lo que le sugerimos que no use la alarma.'}</p>
 
 
 </div>
