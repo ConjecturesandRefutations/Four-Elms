@@ -94,7 +94,7 @@ return(
 <br/><br/>
 
 <li>{lang==='english' ? `Explore the Devil's Punch Bowl: The Devil's Punch Bowl is a stunning natural amphitheater located just a short drive from Godalming. Take a walk around the rim of the bowl and enjoy the beautiful views of the surrounding countryside.` : `Explore Devil's Punch Bowl: Devil's Punch Bowl es un impresionante anfiteatro natural ubicado a poca distancia de Godalming. Dé un paseo por el borde del cuenco y disfrute de las hermosas vistas de la campiña circundante.`}</li>
-<a class="text-blue-600" target="_blank" href='https://www.nationaltrust.org.uk/visit/surrey/hindhead-commons-and-the-devils-punch-bowl'>https://www.nationaltrust.org.uk/visit/surrey/hindhead-commons-and-the-devils-punch-bowl</a>
+<a class="text-blue-600" target="_blank" href='https://www.nationaltrust.org.uk/visit/surrey/hindhead-commons-and-the-devils-punch-bowl'>https://www.nationaltrust.org.uk/visit/punch</a>
 
 <br/><br/>
 
