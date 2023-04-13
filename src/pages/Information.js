@@ -143,7 +143,7 @@ return(
 <br/><br/>
 
 <li><span class='font-bold'>Deep Blue Fish and Chips </span>{lang==='english' ? 'Standard British fish and chips, done well.' : 'Fish and chips británico estándar, bien hecho.'}</li>
-<a class="text-blue-600" target="_blank" href='https://www.deepbluerestaurants.com/locations/godalming'>https://www.deepbluerestaurants.com/locations/godalming</a>
+<a class="text-blue-600" target="_blank" href='https://www.deepbluerestaurants.com/locations/godalming'>https://www.deepbluerestaurants.com/godalming</a>
 
 <br/><br/>
 
@@ -174,7 +174,7 @@ return(
 <p class='mb-4'>{lang==='english' ? `Large supermarkets:` : `Grandes supermercados:`}</p>
 <a class="text-blue-600" target="_blank" href='https://stores.sainsburys.co.uk/0670/godalming'>https://stores.sainsburys.co.uk/0670/godalming</a>
 <br/>
-<a class="text-blue-600" target="_blank" href='https://www.waitrose.com/content/waitrose/en/bf_home/bf/216.html'>https://www.waitrose.com/content/waitrose/en/bf_home/bf/216.html</a>
+<a class="text-blue-600" target="_blank" href='https://www.waitrose.com/content/waitrose/en/bf_home/bf/216.html'>https://www.waitrose.com/godalming.html</a>
 <br/>
 <br/>
 
