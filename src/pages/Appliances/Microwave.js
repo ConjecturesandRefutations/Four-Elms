@@ -49,7 +49,7 @@ return(
 </ol>
 
 <h2 class='text-xl mb-2'>{lang === 'english'  ? `Instructions` : `Instrucciones`}</h2>
-<a class='text-blue-600 mb-8' target='_blank' href='https://www.manualslib.com/download/1365205/Hotpoint-Curve-Mwh-1331-B.html'> https://www.manualslib.com/download/1365205/Hotpoint-Curve-Mwh-1331-B.html</a>
+<a class='text-blue-600 mb-8' id='url' target='_blank' href='https://www.manualslib.com/download/1365205/Hotpoint-Curve-Mwh-1331-B.html'> https://www.manualslib.com/download/1365205/Hotpoint-Curve-Mwh-1331-B.html</a>
 <br/><br/>
 
 <h2 class='text-xl mb-8'>{lang === 'english'  ? `START` : `COMENZAR`}</h2>
