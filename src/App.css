@@ -123,8 +123,13 @@ font-weight: bold;
   list-style-type: disc;
 }
 
-#url{
+#url, #urlTwo{
   word-wrap: break-word;
+}
+
+.badDiv{
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 500px) {

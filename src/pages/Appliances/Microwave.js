@@ -27,7 +27,7 @@ return(
 
 <main class="background md:col-span-3" id='Microwave'>
 
-<div class='md:pt-10 w-3/5 mx-auto' >
+<div class='md:pt-10 w-3/4 mx-auto' >
 
 <h1 class='text-2xl font-bold mb-8 mt-4'> {lang === 'english'  ? `Instructions for Microwave` : `Instrucciones para Microondas`} </h1>
 
