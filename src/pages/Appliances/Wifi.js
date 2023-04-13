@@ -24,11 +24,15 @@ return(
 
 <main class="background md:col-span-3" id='Wifi'>
 
-<div class='md:pt-10 w-3/5 mx-auto' >
+<div class='md:pt-10 w-3/4 mx-auto' >
 
-<h1 class='text-2xl font-bold mb-8 mt-4'> Mattis habitasse laoreet sociosqu, non vestibulum conubia </h1>
+<h1 class='text-2xl font-bold mb-8 mt-4'> Wifi </h1>
 
-<p class='mb-8'>Diam suspendisse class egestas, sapien fringilla consequat, libero lorem eu convallis pretium scelerisque ipsum. Aenean lacinia imperdiet dictumst, nunc feugiat rutrum, sodales non risus vel orci integer. Posuere lacinia sed, per torquent, class eros suspendisse imperdiet ultrices aliquam.</p>
+<p class='mb-8'>{lang==='english' ? `Name: BT-WSAGMP` : `Nombre: BT-WSAGMP`}</p>
+
+<p class='mb-8'>{lang==='english' ? `Password: pCfyG4XvC6hUve` : `Contraseña: pCfyG4XvC6hUve`}</p>
+
+<p class='mb-8'>{lang==='english' ? `If you need to restart the router for any reason, you will find it in the hall, under the table` : `Si necesita reiniciar el enrutador por cualquier motivo, lo encontrará en el pasillo, debajo de la mesa.`}</p>
 
 
 </div>

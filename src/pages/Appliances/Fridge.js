@@ -27,9 +27,15 @@ return(
 
 <div class='md:pt-10 w-3/5 mx-auto' >
 
-<h1 class='text-2xl font-bold mb-8 mt-4'> Mattis habitasse laoreet sociosqu, non vestibulum conubia </h1>
+<h1 class='text-2xl font-bold mb-8 mt-4'> {lang === 'english'  ? `Instructions for the fridge` : `Instrucciones para la nevera`} </h1>
 
-<p class='mb-8'>Diam suspendisse class egestas, sapien fringilla consequat, libero lorem eu convallis pretium scelerisque ipsum. Aenean lacinia imperdiet dictumst, nunc feugiat rutrum, sodales non risus vel orci integer. Posuere lacinia sed, per torquent, class eros suspendisse imperdiet ultrices aliquam.</p>
+<h2 class='text-xl mb-8'>{lang === 'english'  ? `Instructions` : `Instrucciones`}</h2>
+
+
+<p class='mb-8'>{lang==='english' ? `The fridge is very easy to use and should not need any instructions.` : `La nevera es muy fácil de usar y no debería necesitar instrucciones.`}</p>
+<p class='mb-8'>{lang==='english' ? `If you do encounter any problems, here is the instruction manual` : `Si encuentra algún problema, aquí está el manual de instrucciones.`}</p>
+
+<a class='text-blue-600' id='urlThree' href='https://media3.bosch-home.com/Documents/9001471256_B.pdf'>https://media3.bosch-home.com/Documents/9001471256_B.pdf</a>
 
 
 </div>
