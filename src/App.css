@@ -119,6 +119,10 @@ font-weight: bold;
   list-style-type: decimal-leading-zero;
 }
 
+.dots{
+  list-style-type: disc;
+}
+
 @media (max-width: 500px) {
   #quooker-one {
     margin-left: 10vw;
