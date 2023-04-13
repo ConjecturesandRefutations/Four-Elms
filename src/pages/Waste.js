@@ -3,7 +3,7 @@ import { LangContext } from '../context/language.context';
 
 import Navbar from "../components/Navbar";
 
-import Bins from "../images/Bins/Bins.png"
+import Bins from "../images/Other/Bins.png"
 
 function Waste(){
 

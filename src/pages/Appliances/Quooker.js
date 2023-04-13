@@ -31,7 +31,7 @@ return(
 <div class='md:pt-10 w-3/4 mx-auto' >
 
 
-<h2 class='text-xl font-bold underline mb-6 mt-10 md:mt-5' id='quooker'>{lang==='english' ? `Quooker kitchen tap` : 'Grifo de cocina Quoker'}</h2>
+<h2 class='text-xl font-bold underline mb-6 mt-10 md:mt-5' id='quooker'>{lang==='english' ? `Quooker kitchen tap` : 'Grifo de cocina Quooker'}</h2>
 
 <h2 class='text-l font-bold mb-6 mt-8'>{lang==='english' ? `Hot and cold water` : `Agua fría y caliente`}</h2>
 
@@ -47,7 +47,7 @@ Para hervir agua, empuje el anillo hacia abajo, hacia arriba y hacia abajo en r�
 
 <p class='mb-8'>{lang==='english' ? `For boiling water, push the ring down, up, down in quick succession and then rotate to the right. For filtered water, hold the ring down until the light turns blue and the rotate to the right
 The light ring (image 3) is red for boiling water and blue for filtered water. It also illuminates red when the water in the tank is heating up. When the Quooker is not being used, the light will come on several times an hour for a short while. As soon as boiling water is dispensed from the tap, the light will come on quickly and stay on until all the water in the tank is up to temperature again. If the light ring is flashing, the tank is not heating the water and will require a reset. To reset the system, switch off the tank via the Q-shaped on/off switch on the top, wait a couple of minutes and then switch it on again. If it continues to flash, please contact the manufacturer.
-` : `El anillo de luz (imagen 3) es rojo para agua hirviendo y azul para agua filtrada. También se ilumina en rojo cuando el agua del depósito se está calentando. Cuando no se esté utilizando el Quooker, la luz se encenderá varias veces por hora durante un breve periodo de tiempo. Tan pronto como se dispense agua hirviendo del grifo, la luz se encenderá rápidamente y permanecerá encendida hasta que toda el agua del tanque alcance la temperatura nuevamente. Si el anillo de luz parpadea, el tanque no está calentando el agua y requerirá un reinicio. Para reiniciar el sistema, apague el tanque a través del interruptor de encendido/apagado en forma de Q en la parte superior, espere un par de minutos y luego vuelva a encenderlo. Si sigue parpadeando, póngase en contacto con el fabricante.`}</p>
+` : `El anillo de luz (imagen 3) es rojo para agua hirvienda y azul para agua filtrada. También se ilumina en rojo cuando el agua del depósito se está calentando. Cuando no se esté utilizando el Quooker, la luz se encenderá varias veces por hora durante un breve periodo de tiempo. Tan pronto como se dispense agua hirviendo del grifo, la luz se encenderá rápidamente y permanecerá encendida hasta que toda el agua del tanque alcance la temperatura nuevamente. Si el anillo de luz parpadea, el tanque no está calentando el agua y requerirá un reinicio. Para reiniciar el sistema, apague el tanque por debajo del fregadero a través del interruptor de encendido/apagado en forma de Q en la parte superior, espere un par de minutos y luego vuelva a encenderlo. Si sigue parpadeando, póngase en contacto con el fabricante.`}</p>
 
 <img src={quookerTwo} alt='quookerTwo' id='quooker-two'/>
 
