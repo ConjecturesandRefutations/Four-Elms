@@ -173,18 +173,21 @@ return(
 
 <p class='mb-4'>{lang==='english' ? `Large supermarkets:` : `Grandes supermercados:`}</p>
 <a class="text-blue-600" target="_blank" href='https://stores.sainsburys.co.uk/0670/godalming'>https://stores.sainsburys.co.uk/0670/godalming</a>
+<br/>
 <a class="text-blue-600" target="_blank" href='https://www.waitrose.com/content/waitrose/en/bf_home/bf/216.html'>https://www.waitrose.com/content/waitrose/en/bf_home/bf/216.html</a>
 <br/>
 <br/>
 
 <p class='mb-4'>{lang==='english' ? `Local shops with longer opening hours:` : `Tiendas locales con horarios más amplios:`}</p>
 <a class="text-blue-600" target="_blank" href='https://www.nisalocally.co.uk/stores/surrey/godalming/45-high-st'>https://www.nisalocally.co.uk/stores/surrey/godalming/45-high-st</a>
+<br/>
 <a class="text-blue-600" target="_blank" href='https://www.tesco.com/store-locator/godalming/portsmouth-rd'>https://www.tesco.com/store-locator/godalming/portsmouth-rd</a>
 <br/>
 <br/>
 
 <p class='mb-4'>{lang==='english' ? `On-line shopping:` : `Las compras en línea:`}</p>
 <a class="text-blue-600" target="_blank" href='https://www.waitrose.com/'>https://www.waitrose.com/</a>
+<br/>
 <a class="text-blue-600" target="_blank" href='https://www.sainsburys.co.uk/'>https://www.sainsburys.co.uk/</a>
 
 
