@@ -54,7 +54,7 @@ return(
 <ol class='ordered ml-8'>
 
 <li>{lang==='english' ? 'Visit Winkworth Arboretum: This stunning National Trust site is just a short drive from Godalming and boasts over 1,000 species of trees and shrubs. The arboretum is particularly beautiful in the autumn when the trees are changing color. ' : 'Visite Winkworth Arboretum: este impresionante sitio del National Trust se encuentra a poca distancia de Godalming y cuenta con más de 1,000 especies de árboles y arbustos. El arboreto es especialmente hermoso en otoño, cuando los árboles cambian de color.'}</li>
-<a class="text-blue-600" target="_blank" href='https://www.nationaltrust.org.uk/visit/surrey/winkworth-arboretum'>https://www.nationaltrust.org.uk/visit/surrey/winkworth-arboretum</a>
+<a class="text-blue-600" target="_blank" href='https://www.nationaltrust.org.uk/visit/surrey/winkworth-arboretum'>https://www.nationaltrust.org.uk/visit/</a>
 
 <br/><br/>
 
@@ -64,7 +64,7 @@ return(
 <br/><br/>
 
 <li>{lang==='english' ? 'Walk the North Downs Way: The North Downs Way is a long-distance walking trail that passes through Godalming. Take a leisurely stroll through the countryside and enjoy the stunning views of the Surrey Hills.' : 'Camine por North Downs Way: North Downs Way es un sendero para caminar de larga distancia que pasa por Godalming. Dé un paseo tranquilo por el campo y disfrute de las impresionantes vistas de las colinas de Surrey.'}</li>
-<a class="text-blue-600" target="_blank" href='https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/'>https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/</a>
+<a class="text-blue-600" target="_blank" href='https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/'>https://www.nationaltrail.co.uk/en_GB/trails</a>
 
 <br/><br/>
 
@@ -74,7 +74,7 @@ return(
 <br/><br/>
 
 <li>{lang==='english' ? 'Take a trip to Guildford: Just a short drive or train ride from Godalming is the historic town of Guildford. Visit Guildford Castle, explore the shops and restaurants, or take a walk along the River Wey. ' : 'Haga un viaje a Guildford: a poca distancia en automóvil o en tren desde Godalming se encuentra la ciudad histórica de Guildford. Visite el castillo de Guildford, explore las tiendas y los restaurantes, o dé un paseo por el río Wey.'}</li>
-<a class="text-blue-600" target="_blank" href='https://www.nationaltrust.org.uk/visit/surrey/river-wey-and-godalming-navigations-and-dapdune-wharf'>. https://www.nationaltrust.org.uk/visit/surrey/river-wey-and-godalming-navigations-and-dapdune-wharf</a>
+<a class="text-blue-600" target="_blank" href='. https://www.nationaltrust.org.uk/visit/surrey/river-wey-and-godalming-navigations-and-dapdune-wharf'>. https://www.nationaltrust.org.uk/visit/surrey/</a>
 
 <br/><br/>
 
@@ -143,7 +143,7 @@ return(
 <br/><br/>
 
 <li><span class='font-bold'>Deep Blue Fish and Chips </span>{lang==='english' ? 'Standard British fish and chips, done well.' : 'Fish and chips británico estándar, bien hecho.'}</li>
-<a class="text-blue-600" target="_blank" href='https://www.deepbluerestaurants.com/locations/godalming'>https://www.deepbluerestaurants.com/godalming</a>
+<a class="text-blue-600" target="_blank" href='https://www.deepbluerestaurants.com/locations/godalming'>https://www.deepbluerestaurants.com/god</a>
 
 <br/><br/>
 
@@ -179,9 +179,9 @@ return(
 <br/>
 
 <p class='mb-4'>{lang==='english' ? `Local shops with longer opening hours:` : `Tiendas locales con horarios más amplios:`}</p>
-<a class="text-blue-600" target="_blank" href='https://www.nisalocally.co.uk/stores/surrey/godalming/45-high-st'>https://www.nisalocally.co.uk/stores/surrey/godalming/45-high-st</a>
+<a class="text-blue-600" target="_blank" href='https://www.nisalocally.co.uk/stores/surrey/godalming/45-high-st'>https://www.nisastores/godalming/</a>
 <br/>
-<a class="text-blue-600" target="_blank" href='https://www.tesco.com/store-locator/godalming/portsmouth-rd'>https://www.tesco.com/store-locator/godalming/portsmouth-rd</a>
+<a class="text-blue-600" target="_blank" href='https://www.tesco.com/store-locator/godalming/portsmouth-rd'>https://www.tesco.com/portsmouth-rd</a>
 <br/>
 <br/>
 
