@@ -44,7 +44,6 @@ input[type="email"] {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   width: 100%;
-
 }
 
 .button:hover {
@@ -69,7 +68,14 @@ input[name="comments"] {
 
   .navbar {
     overflow-y: auto; /* add vertical scrolling */
-    max-height: 100vh; /* set maximum height to viewport height */
+    max-height: 103vh; /* set maximum height to viewport height */
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
   }
   
 
