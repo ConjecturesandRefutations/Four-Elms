@@ -67,6 +67,12 @@ input[name="comments"] {
   min-height: 100vh;
 }
 
+  .navbar {
+    overflow-y: auto; /* add vertical scrolling */
+    max-height: 100vh; /* set maximum height to viewport height */
+  }
+  
+
  @media screen and (max-width: 767px) {
   .navbar {
     position: fixed;
