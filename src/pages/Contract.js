@@ -23,7 +23,7 @@ return(
 
 </div>
 
-<main class="background md:col-span-3" id='Contract' >
+<main class="background md:col-span-3 pb-8" id='Contract' >
 
 <div class='md:pt-10 w-3/4 mx-auto' >
 
