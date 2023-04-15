@@ -30,7 +30,7 @@ return(
 <form action="https://formsubmit.co/ccollins@i-realise.co.uk" method="POST" > 
      <input type="text" name="name" placeholder={lang==='english' ? "your name" : 'te llamas'} required/>
      <input type="email" name="email" placeholder={lang==='english' ? "your email" : 'su correo electrónico'} required/>
-     <input type="text" name="comments" placeholder={lang==='english' ? "your feedback" : 'sus comentarios'} required/>
+     <textarea class='feedback-text' type="text" name="comments" placeholder={lang==='english' ? "your feedback" : 'sus comentarios'} required/>
      <button className="button" type="submit">{lang==='english' ? 'Send' : 'Enviar'}</button>
 </form>
 
