@@ -63,21 +63,21 @@ return(
         </li>
         <li class="">
             <NavLink to={'/contact'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2"> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y emergencia'}</span>            
+                <span class="px-4 flex justify-end mt-1 md:mt-3  text-gray-700 py-2"> {lang==='english' ? 'Contact and emergency information' : 'Información de contacto y emergencia'}</span>            
             </NavLink>
         </li>
         <li class="">
             <NavLink to={'/alarm'} className={({ isActive }) => isActive ? "selected" : ""}  onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Alarm system and locking up' : 'Sistema de alarma y bloqueo'}</span>          
+                <span class="px-4 flex justify-end mt-1 md:mt-3  text-gray-700 py-2">{lang==='english' ? 'Alarm system and locking up' : 'Sistema de alarma y bloqueo'}</span>          
             </NavLink>
         </li>
         <li>
             <Link className={({ isActive }) => isActive ? "selected" : ""} onClick={expandMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
+                <span class="px-4 flex justify-end mt-1 md:mt-3  text-gray-700 py-2">{lang==='english' ? `Instructions for appliances and electronics ${changeChevron(expandMenu)}` : `Instrucciones para electrodomésticos y electrónica ${changeChevron(expandMenu)}`}</span>              
             </Link>
             </li>
             {expandMenu ? 
-             <ul class='text-xs px-6 mt-1'>
+             <ul class='text-xs px-6  text-gray-700 mt-1'>
                 <li><NavLink to={'/appliances/aga'} onClick={specialMenuClick}>{lang==='english' ? 'AGA (cooker)' : 'AGA (cocina)'}</NavLink></li>
                 <li><NavLink to={'/appliances/quooker'} onClick={specialMenuClick}>{lang==='english' ? 'Quooker (kitchen tap)' : 'Quooker (grifo de cocina)'}</NavLink></li>
                 <li><NavLink to={'/appliances/microwave'} onClick={specialMenuClick}>{lang==='english' ? 'Microwave' : 'Microonda'}</NavLink></li>
@@ -96,32 +96,32 @@ return(
         
         <li class="">
             <NavLink to={'/towels'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Towels, linen & kitchen supplies' : 'Toallas, ropa de cama y utensilios de cocina'}</span>               
+                <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'Towels, linen & kitchen supplies' : 'Toallas, ropa de cama y utensilios de cocina'}</span>               
             </NavLink>
         </li>
         <li class="">
             <NavLink to={'/waste'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Waste disposal and recycling' : 'Eliminación y reciclaje de residuos'}</span>                      
+                <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'Waste disposal and recycling' : 'Eliminación y reciclaje de residuos'}</span>                      
             </NavLink>
         </li>
         <li class="">
             <NavLink to={'/information'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Information on the local area' : 'Información sobre el área local'}</span>               
+                <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'Information on the local area' : 'Información sobre el área local'}</span>               
             </NavLink>
         </li>
         <li class="">
             <NavLink to={'/contract'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'House rules & contract' : 'Reglas de la casa y contrato'}</span>              
+                <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'House rules & contract' : 'Reglas de la casa y contrato'}</span>              
             </NavLink>
         </li>
         <li class="">
             <NavLink to={'/cleaning'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'House cleaning' : 'Limpieza de la casa'}</span>             
+                <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'House cleaning' : 'Limpieza de la casa'}</span>             
             </NavLink>
         </li>
         <li class="">
             <NavLink to={'/feedback'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end mt-1 md:mt-3 py-2">{lang==='english' ? 'Feedback' : 'Retroalimentación'}</span>               
+                <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'Feedback' : 'Retroalimentación'}</span>               
             </NavLink>
         </li>
     </ul>
