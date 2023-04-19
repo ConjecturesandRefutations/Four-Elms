@@ -42,6 +42,9 @@ return(
 <p>{lang==='english' ? 'NHS helpline for less urgent medical problems 111' : 'Línea de ayuda del NHS para problemas médicos menos urgentes 111'}</p>
 <br/>
 <p>{lang==='english' ? 'Alarm company +44333 666 2121 option 3' : 'Empresa de alarmas +44333 666 2121 opción 3'}</p>
+<br/>
+<p>{lang==='english' ? 'Fire extinguisher & fire blanket in utility room' : 'Extintor de incendios y manta ignífuga en el cuarto de servicio'}</p>
+<br/><p>{lang==='english' ? 'First aid kit and analgesics in downstairs toilet cabinet' : 'Botiquín de primeros auxilios y analgésicos en el gabinete en el WC de la planta baja'}</p>
 
 
 </div>
