@@ -1,5 +1,4 @@
 import { useContext, useEffect } from 'react'
-import { LangContext } from '../../context/language.context';
 
 import Navbar from "../../components/Navbar";
 
@@ -8,8 +7,8 @@ import DishwasherTwo from '../../images/Dishwasher/DishwasherTwo.png'
 
 function Dishwasher(){
 
-     const { lang } = useContext(LangContext);
-
+     const lang='english'
+     
      useEffect(() => {
           window.scrollTo(0, 0);
         }, []);

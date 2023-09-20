@@ -1,5 +1,4 @@
 import { useContext, useEffect } from 'react'
-import { LangContext } from '../../context/language.context';
 
 import Navbar from "../../components/Navbar";
 
@@ -7,7 +6,7 @@ import HeatingImg from '../../images/Other/Heating.png'
 
 function Heating(){
 
-     const { lang } = useContext(LangContext);
+     const lang='english'
 
      useEffect(() => {
           window.scrollTo(0, 0);

@@ -1,6 +1,4 @@
 import { useContext, useEffect } from 'react'
-import { LangContext } from '../../context/language.context';
-
 import Navbar from "../../components/Navbar";
 
 import WashingMachineImg from '../../images/Other/WashingMachine.png'
@@ -8,8 +6,8 @@ import WashingSpanish from '../../images/Other/WashingSpanish.png'
 
 function WashingMachine(){
 
-     const { lang } = useContext(LangContext);
-
+     const lang='english'
+     
      useEffect(() => {
           window.scrollTo(0, 0);
         }, []);

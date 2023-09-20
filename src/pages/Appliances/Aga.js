@@ -1,5 +1,4 @@
 import { useContext, useEffect } from 'react'
-import { LangContext } from '../../context/language.context';
 
 import Navbar from "../../components/Navbar";
 
@@ -19,7 +18,7 @@ import Four from '../../images/AgaInstructions/4.png'
 
 function Aga(){
 
-     const { lang } = useContext(LangContext);
+    const lang='english'
 
      useEffect(() => {
         window.scrollTo(0, 0);

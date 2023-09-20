@@ -1,12 +1,11 @@
 import { useContext, useEffect } from 'react'
-import { LangContext } from '../context/language.context';
 
 import Navbar from "../components/Navbar";
 
 function Contact(){
 
-     const { lang } = useContext(LangContext);
-
+     const lang='english'
+     
      useEffect(() => {
           window.scrollTo(0, 0);
         }, []);
@@ -35,7 +34,6 @@ return(
 <br/>
 <p>Judy Collins +44 7790 909817</p>
 <br/>
-<p class='mb-8'>{lang==='english' ? 'Thomas Filipek (house keeper and gardener) +44 7445 241564 (available from 22nd May)' : 'Thomas Filipek (ama de llaves y jardinero) +44 7445 241564 (disponible a partir del 22 de mayo)'}</p>
 <h2 class='text-xl font-bold mb-8'>{lang==='english' ? 'Emergency' : 'Emergencia'}</h2>
 <p>{lang==='english' ? 'Police, Fire, Ambulance (emergency only) 999' : 'Policía, Bomberos, Ambulancia (solo emergencias) 999'}</p>
 <br/>

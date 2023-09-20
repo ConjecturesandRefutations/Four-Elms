@@ -1,12 +1,11 @@
 import { useContext, useEffect } from 'react'
-import { LangContext } from '../context/language.context';
 
 import Navbar from "../components/Navbar";
 
 function Alarm(){
 
-     const { lang } = useContext(LangContext);
-
+     const lang='english'
+     
      useEffect(() => {
           window.scrollTo(0, 0);
         }, []);
@@ -33,7 +32,7 @@ return(
 <h2 class='text-xl font-bold mb-4 mt-8'> {lang==='english' ? `Keys` : 'Llaves'} </h2>
 
 
-<p>{lang==='english' ? 'When you leave the building, we suggest you do this by the back door:' : 'Cuando salga del edificio, le sugerimos que lo haga por la puerta trasera:'}</p>
+<p>{lang==='english' ? 'If you leave the building unattended, we suggest you do this by the back door:' : 'Cuando salga del edificio, le sugerimos que lo haga por la puerta trasera:'}</p>
 <br/>
 <ul>
      <li class='ml-8'>{lang==='english' ? '•	Make sure the back door, conservatory doors, garden room doors and all ground floor windows are closed and locked.' : '•	Asegúrese de que la puerta trasera, las puertas del invernadero, las puertas de la sala del jardín y todas las ventanas de la planta baja estén cerradas y bloqueadas.'}</li>

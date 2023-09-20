@@ -1,15 +1,13 @@
 import { useContext } from 'react'
 import { Link, NavLink } from "react-router-dom";
 
-import { LangContext } from '../context/language.context';
-
 import { AppContext } from '../context/app.context';
 import { OpenContext } from '../context/open.context';
 
 function Navbar(){
 
-    const { lang } = useContext(LangContext);
-
+    const lang='english'
+    
     const { expandMenu, setExpandMenu } = useContext(AppContext);
 
     const { menuOpen, setMenuOpen } = useContext(OpenContext);
@@ -94,11 +92,7 @@ return(
             </ul>
                    : null }
         
-        <li class="">
-            <NavLink to={'/towels'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
-                <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'Towels, linen & kitchen supplies' : 'Toallas, ropa de cama y utensilios de cocina'}</span>               
-            </NavLink>
-        </li>
+
         <li class="">
             <NavLink to={'/waste'} className={({ isActive }) => isActive ? "selected" : ""} onClick={handleMenuClick}>
                 <span class="px-4 flex justify-end  text-gray-700 mt-1 md:mt-3 py-2">{lang==='english' ? 'Waste disposal and recycling' : 'Eliminación y reciclaje de residuos'}</span>                      

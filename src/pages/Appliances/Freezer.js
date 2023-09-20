@@ -1,11 +1,10 @@
 import { useContext, useEffect } from 'react'
-import { LangContext } from '../../context/language.context';
 
 import Navbar from "../../components/Navbar";
 
 function Freezer(){
+     const lang='english'
 
-     const { lang } = useContext(LangContext);
 
      useEffect(() => {
           window.scrollTo(0, 0);
