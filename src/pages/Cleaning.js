@@ -31,7 +31,7 @@ return(
 
 <p class='mb-8'>{lang==='english' ? `The house cleaning materials are kept in the airing cupboard next to the family bathroom.` : `Los materiales de limpieza de la casa se guardan en el armario secarropa al lado del baño familiar.`}</p>
 
-<p class='mb-8'>{lang==='english' ? `I you would like to hire someone to clean the house before you leave, we can recommend these people as good value for money +44 7413 119177.` : `Si desea contratar a alguien para que limpie la casa antes de irse, podemos recomendar a estas personas por su buena relación calidad-precio +44 7413 119177.`}</p>
+<p class='mb-8'>{lang==='english' ? `If you would like to hire someone to clean the house before you leave, we can recommend these people as good value for money +44 7413 119177.` : `Si desea contratar a alguien para que limpie la casa antes de irse, podemos recomendar a estas personas por su buena relación calidad-precio +44 7413 119177.`}</p>
 
 </div>
 
