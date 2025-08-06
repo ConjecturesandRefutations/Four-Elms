@@ -8,7 +8,6 @@ import pic4 from "../images/FourElms/Four Elms 4.png";
 import pic5 from "../images/FourElms/Four Elms 5.png";
 
 function Home() {
-  const { lang } = useContext(LangContext);
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
