@@ -1,3 +1,7 @@
+.inset-0{
+    z-index: 999999
+}
+
 #flags{
  position: fixed;
  right: 50px;
