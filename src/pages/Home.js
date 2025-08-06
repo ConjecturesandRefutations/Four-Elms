@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 
-import { LangContext } from "../context/language.context";
-
 import pic1 from "../images/FourElms/Four Elms 1.png";
 import pic2 from "../images/FourElms/Four Elms 2.png";
 import pic3 from "../images/FourElms/Four Elms 3.png";
