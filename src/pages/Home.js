@@ -70,7 +70,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
+                <div className="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg p-3">
                   <p className="text-sm ml-1 mr-1 font-bold">
                     {lang === "english"
                       ? "Four Elms is a large family house in a quiet upscale road near the centre of Godalming. It is a tastefully decorated, tile hung Edwardian house built in the Arts and Crafts style. The interior is light with many double aspect rooms. The newly renovated traditional kitchen leads to a large open-plan breakfast room and even larger conservatory. The beautiful garden won the Godalming in Bloom best garden award."
