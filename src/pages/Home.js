@@ -118,29 +118,23 @@ function Home() {
         </div>
       </div>
 
-      {/* Modal for Full Image */}
+      {/* Modal */}
       {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
-          onClick={closeModal}
-        >
-          {/* Stop propagation to prevent modal from closing when clicking the X */}
-          <div className="relative" onClick={(e) => e.stopPropagation()}>
-            {/* Close Button */}
-            <button
-              onClick={closeModal}
-              className="absolute top-2 right-2 text-white text-3xl font-bold bg-black bg-opacity-50 hover:bg-opacity-75 rounded-full w-10 h-10 flex items-center justify-center"
-              aria-label="Close"
-            >
-              &times;
-            </button>
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+          {/* Close button */}
+          <button
+            onClick={closeModal}
+            className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400 focus:outline-none"
+            aria-label="Close"
+          >
+            ×
+          </button>
 
-            <img
-              src={selectedImage}
-              alt="Full View"
-              className="max-w-full max-h-screen rounded shadow-lg"
-            />
-          </div>
+          <img
+            src={selectedImage}
+            alt="Full View"
+            className="max-w-full max-h-full rounded shadow-lg"
+          />
         </div>
       )}
     </>
