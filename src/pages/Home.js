@@ -120,25 +120,31 @@ function Home() {
 
       {/* Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-          {/* Close button */}
-          <button
-            onClick={closeModal}
-            className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-red-400 focus:outline-none"
-            aria-label="Close"
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={closeModal} // handle background click
+        >
+          {/* Stop click propagation on modal content */}
+          <div
+            className="relative"
+            onClick={(e) => e.stopPropagation()} // Prevent background click when clicking on content
           >
-            ×
-          </button>
-
-          <img
-            src={selectedImage}
-            alt="Full View"
-            className="max-w-full max-h-full rounded shadow-lg"
-          />
+            {/* Close button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-0 right-0 mt-2 mr-2 text-white text-3xl font-bold hover:text-red-400 focus:outline-none"
+              aria-label="Close"
+            >
+              ×
+            </button>
+      
+            <img
+              src={selectedImage}
+              alt="Full View"
+              className="max-w-full max-h-[90vh] rounded shadow-lg"
+            />
+          </div>
         </div>
       )}
-    </>
-  );
-}
 
 export default Home;
