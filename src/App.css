@@ -33,7 +33,11 @@ input {
   border: 8px solid #F9DFDF;
 }
 
-input[type="text"],
+input[type="text"]{
+  width: 100%;
+  margin-top: 10px;
+}
+
 input[type="email"] {
   width: 100%;
   margin-top: 10px;
